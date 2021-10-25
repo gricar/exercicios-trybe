@@ -1,3 +1,4 @@
 - Comunicação
-
+- Trabalho em equipe
 - Estudos
+- Persistencia
