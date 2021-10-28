@@ -1,0 +1,31 @@
+body{
+    font-size: 16px;
+  }
+
+  h1{
+    font-size: 65px;
+    color: rgb(224, 151, 15);
+    font-family: sans-serif;
+  }
+  h2{
+    line-height: 15px;
+  }
+
+  ul{
+    
+    text-align: justify;
+    text-decoration: underline overline dotted red;
+  }
+
+  p {
+    background-color:palegreen;
+    font-weight: 600;
+    font-size: 3em;
+  }
+
+  .comentarios{
+    font-size: 12px;
+    font-family:fantasy;
+    font-style: oblique;
+    background-color: white;
+  }
