@@ -4,13 +4,29 @@
     <meta charset="UTF-8">
     <title>HTML</title>
     <style>
+      body{
+        font-size: 16px;
+      }
+
       h1{
         font-size: 65px;
         color: rgb(224, 151, 15);
+        font-family: sans-serif;
+      }
+      h2{
+        line-height: 15px;
       }
 
-      p, ul{
+      ul{
+        
+        text-align: justify;
+        text-decoration: underline overline dotted red;
+      }
+
+      p {
         background-color:palegreen;
+        font-weight: 600;
+        font-size: 3em;
       }
 
       .comentarios{
@@ -23,11 +39,14 @@
   </head>
   <body>
     <h1>Exercícios 3.2</h1>
-    <p class="comentarios">Modifique o tamanho do h1 para 65 pixels e a cor do texto para laranja</p><br>
+    <p class="comentarios">Modifique o família do h1 para sans-serif</p><br>
+    <p class="comentarios">Modifique o font-size do body para 16px</p><br>
+    <p class="comentarios">Coloque o tamanho do parágrafo com o tamanho de 3 vezes o padrão do body</p><br>
+
     
     <h2>Primeiros passos em CSS</h2>
 
-    <p class="comentarios">Modifique a cor de fundo da lista não ordenada</p><br>
+    <p class="comentarios">Deixe o parágrafo com o font-weight 600</p><br>
     <p>Qual é a sua cor favorita?</p>
     <p class="comentarios"> Crie uma classe para modificar a cor de fundo da tag "p" e da "ul" ao mesmo tempo</p>
     <ul>
@@ -35,5 +54,8 @@
       <li>Vermelho</li>
       <li>Marrom</li>
     </ul>
+
+    <p class="comentarios">Explore as propriedades font-style, line-height, text-align e text-decoration</p>
+    
   </body>
 </html>
