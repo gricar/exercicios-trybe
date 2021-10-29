@@ -1,39 +1,20 @@
-.super-mario {
-  width: 200px;
-  position: absolute;
-  z-index: 2; /*Posicione o Mário acima do Goomba.*/
-
+/*O texto das tags 'h1' e 'p' estejam centralizados.*/
+p, h1 {
+  text-align: center;
 }
 
-.goomba {
-  width: 100px;
-  position: absolute;
-  z-index: 1;
-  top: 380px;
-  left: 70px;
-  ;
+/* A cor de fundo da sua lista mude quando o cursor estiver sobre o item */
+li:hover{
+  background: cornflowerblue;
 }
 
-.baloon {
-  top: 100px;
-  position: absolute;
-  z-index: 2;
-  top: 55px;
-  left: 320px;         /*Posicione o balão para que se torne uma fala de Bowser.*/
+/*A fonte do item mude quando ele for clicado.*/
+li:active{
+  font-size: 26px;
+  font-family: fantasy;
 }
 
-.speach {
-  font-size: 25px;
-  position: absolute;
-  z-index: 3;
-  top: 95px;          /*Posicione a tag p para que fique dentro do balão de fala. */
-  left: 340px;
-}
-
-.bowser {
-  width: 200px;
-  position: absolute;
-  z-index: 1;
-  top: 180px;
-  left: 600px;
+li {
+  list-style: none;
+  transition: margin-left 4s;
 }
