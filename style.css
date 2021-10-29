@@ -1,31 +1,29 @@
-body{
-    font-size: 16px;
-  }
+.caixa {
+  color: white;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: top;
+}
 
-  h1{
-    font-size: 65px;
-    color: rgb(224, 151, 15);
-    font-family: sans-serif;
-  }
-  h2{
-    line-height: 15px;
-  }
+.width-and-height {
+  height: 50px;
+  width: 50px;
+}
 
-  ul{
-    
-    text-align: justify;
-    text-decoration: underline overline dotted red;
-  }
+/* insira na classe abaixo um padding de 20px para aplicá-lo aos itens B, C e D */
+.padding {
+  padding: 20px;
 
-  p {
-    background-color:palegreen;
-    font-weight: 600;
-    font-size: 3em;
-  }
+}
 
-  .comentarios{
-    font-size: 12px;
-    font-family:fantasy;
-    font-style: oblique;
-    background-color: white;
-  }
+/* insira na classe abaixo uma margem de 30px para aplicá-la aos itens C e D */
+.margin {
+margin: 30px;
+}
+
+/* insira na classe abaixo uma borda com valor '5px solid black' para aplicá-la ao item D */
+.border {
+  border: solid black;
+  border-width: 5px;
+}
