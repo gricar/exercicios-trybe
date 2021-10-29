@@ -1,20 +1,35 @@
-/*O texto das tags 'h1' e 'p' estejam centralizados.*/
-p, h1 {
-  text-align: center;
+/*Estilize as divs para que, ao passar o cursor por cima das mesmas, elas ganhem uma borda.*/
+div:hover{
+  border-style: solid;
+  border-color: dodgerblue;
 }
 
-/* A cor de fundo da sua lista mude quando o cursor estiver sobre o item */
-li:hover{
-  background: cornflowerblue;
+/*Para este exercício, você não deve atribuir nenhuma classe ou id aos componentes, mas apenas utilizar pseudoclasses para individualizar cada elemento!*/
+/* Faça cada div ter uma cor própria.*/
+
+
+/*Estilize cada uma das tags h3 */
+h3[title="primaria"]{
+  color: brown;
 }
 
-/*A fonte do item mude quando ele for clicado.*/
-li:active{
-  font-size: 26px;
+h3[title="secundaria"]{
+  font-style: italic;
+}
+
+h3[title="complementar"]{
   font-family: fantasy;
 }
 
-li {
-  list-style: none;
-  transition: margin-left 4s;
+h3[title="escura"]{
+  background-color: indianred;
 }
+
+h3[title="clara"]{
+  color: coral;  
+}
+
+/*Faça a terceira div ser maior que as demais.*/
+
+
+/*Deixe as tags ímpares h3 com o texto em itálico.*/
