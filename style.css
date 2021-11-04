@@ -1,40 +1,60 @@
-h1, h3 {
+header{
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: coral;
+  font-weight: bold;
+}
+
+nav li {
+  display: inline;
+  margin-left: 15%;
+  font-size: 16px;
+}
+
+h2{
   text-align: center;
 }
 
-ul{
-  list-style: none;
-  text-align: center;
+main{
+  width: 80%;
+  border: 1px solid black;
 }
 
-li {
-  display: inline-block;
-}
-
-.first {
-  background-color: rgb(235, 200, 84);
-  font-size: 20px;
-  height: 50px;
-  text-align: center;
-  display: block;
+.main-article{
   width: 200px;
-  margin-left: 43%;
 }
 
-.second {n;
-  background-color: rgb(219, 219, 219);
-  font-size: 20px;
-  height: 50px;
-  text-align: center;
-  display: inline-block;
-  width: 300px;
+aside{
+  width: 20%;
 }
 
-.third {;
-  background-color: rgb(170, 142, 106);
-  font-size: 20px;
-  height: 50px;
-  text-align: center;
+article{
+  border: 2px solid green;
+  padding: 2px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section{
+  border: 2px solid red;
   width: 300px;
-  display: inline-block;
+  text-align: justify;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 1%;
+}
+
+aside{
+  border: 2px solid blue;
+}
+
+img{
+  width: 180px;
+  display: block;
+}
+
+p, li{
+  font-size: 12px;
+  font-weight: normal;
 }
