@@ -8,7 +8,8 @@ let multiplicacao = a*b;
 let divisao = a/b;
 let modulo = a%b;
 
-console.log(adicao, subtracao, multiplicacao, divisao, modulo);
+console.log('Ex 01: ', adicao, subtracao, multiplicacao, divisao, modulo);
+console.log('\n');
 
 //Ex.2 - Faça um programa que retorne o maior de dois números
 if (a>b) {
@@ -16,6 +17,9 @@ if (a>b) {
 } else {
     console.log(b);
 }
+
+console.log('\n');
+
 
 //Ex.3 - Faça um programa que retorne o maior de três números
 if (a>b && a>c) {
@@ -25,6 +29,9 @@ if (a>b && a>c) {
 } else {
     console.log(c);
 }
+
+console.log('\n');
+
 
 //Ex.4 - Faça um programa que, dado um valor definido numa constante, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário.
 const variavel = 5;
@@ -36,6 +43,9 @@ if (variavel > 0) {
 } else {
     console.log("Zero-");
 }
+
+console.log('\n');
+
 
 //Ex.5 - Defina três constantes com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false , caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.
 const ang1 = 60;
@@ -55,6 +65,9 @@ if (angulos) {
     console.log("Erro, angulo inválido.")
 }
 
+console.log('\n');
+
+
 //Ex.6 - Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
 const pecaXadrez = "Dama";
 
@@ -71,6 +84,9 @@ switch (pecaXadrez.toLocaleLowerCase()) {
     default:
         console.log("Esta peça não existe no jogo da Xadrez")
 }
+
+console.log('\n');
+
 
 //Ex.7 - Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F
 const nota = 80;
@@ -90,3 +106,112 @@ if (nota >= 90) {
 } else if (nota < 0 && nota > 100) {
     console.log("Erro");
 }
+
+console.log('\n');
+
+
+//8 - Escreva um programa que defina três números em constantes e retorne true se pelo menos uma dos três for par. Caso contrário, ele retorna false. ***Bonus: use somente um if.
+
+const num1 = 5;
+const num2 = 10;
+const num3 = 38;
+
+let ehPar = false;
+
+let par1 = num1 % 2;
+let par2 = num2 % 2;
+let par3 = num3 % 2;
+
+if (par1 == 0 || par2 == 0 || par3 == 0) {
+  ehPar = true;
+};
+
+console.log('Ex 08', ehPar);
+console.log('\n');
+
+
+//9 - Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false. ***Bonus: use somente um if.
+const num1_1 = 5;
+const num2_1 = 10;
+const num3_1 = 38;
+
+let ehImpar = false;
+
+let impar1 = num1_1 % 2;
+let impar2 = num2_1 % 2;
+let impar3 = num3_1 % 2;
+
+if (impar1 == 1 || impar2 == 1 || impar3 == 1) {
+  ehImpar = true;
+};
+
+console.log('Ex 09', ehImpar);
+console.log('\n');
+
+//10 - Escreva um programa que se inicie com dois valores em duas constantes diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos.
+
+const custoBruto = 100;
+const venda = 500;
+
+const impostoSobreOCusto = custoBruto*0.2; //imposto de 20%
+const custoTotal = custoBruto + impostoSobreOCusto;
+
+if (custoBruto >= 0 && venda >=0) {
+  let lucro = (venda - custoTotal)*1000;
+  console.log(lucro);
+} else {
+  console.log("Erro, os valores de entrada devem ser maior do que zero");  //Seu programa também deve emitir uma mensagem de erro e encerrar caso algum dos seus valores de entrada seja menor que zero.
+}
+
+//11 -Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido descontados de seu salário bruto o INSS e o IR.
+const salarioBruto = 3000;
+console.log("Salário Bruto: R$" + salarioBruto);
+let aliquotaINSS = 0;
+
+//INSS
+if (salarioBruto <= 1556.94) {  
+  aliquotaINSS = 0.08;
+} else if (salarioBruto < 2594.92) {
+  aliquotaINSS = 0.09;
+} else if (salarioBruto < 5189.82) {
+  aliquotaINSS = 0.11;
+} else {
+  descontoINSS = 570.88;
+  console.log('Maxima');
+};
+console.log("Taxa de INSS: " + (aliquotaINSS*100) + "%");
+
+let descontoINSS = aliquotaINSS * salarioBruto; //Em reais
+let salarioDescontoINSS = salarioBruto - descontoINSS; //Em reais
+console.log("Desconto do INSS: R$" + descontoINSS);
+console.log("Salario descontado o INSS, Base para IR: R$" + salarioDescontoINSS);
+
+
+//Imposto de Renda - deduzido o INSS
+let aliquotaIR = 0;
+let parcelaIR = 0; //Parcela a deduzir o IR
+
+if (salarioDescontoINSS <= 1903.98) {  
+  descontoIR = 0;
+  console.log('Isento');
+} else if (salarioDescontoINSS < 2826.65) {
+  aliquotaIR = 0.075;
+  parcelaIR = 142.80;
+} else if (salarioDescontoINSS < 3751.05) {
+  aliquotaIR = 0.15;
+  parcelaIR = 354.80;
+} else if (salarioDescontoINSS < 4664.68) {
+  aliquotaIR = 0.225;
+  parcelaIR = 636.13;
+} else {
+  aliquotaIR = 0.275;
+  parcelaIR = 869.36;
+};
+console.log("Taxa de IR: " + (aliquotaIR*100) + "%");
+
+let descontoIR = (aliquotaIR * salarioDescontoINSS) - parcelaIR; //Em reais
+console.log("Desconto do IR: R$" + descontoIR);
+
+//Salario Luquido
+let salarioLiquido = salarioDescontoINSS - descontoIR;
+console.log("Salário Liquido: R$" + salarioLiquido);
