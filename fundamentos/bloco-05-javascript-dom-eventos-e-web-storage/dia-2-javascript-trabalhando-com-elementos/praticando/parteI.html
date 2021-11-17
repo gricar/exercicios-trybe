@@ -1,0 +1,62 @@
+<!-- 5.2 JavaScript - Trabalhando com elementos
+Parte I - Buscando elementos -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5.2 - JS - Parte I - Vamos Praticar</title>
+</head>
+<body>  
+  <main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+  </main>
+  <script>
+    //1. Acesse o elemento elementoOndeVoceEsta.
+    const one = document.getElementById('elementoOndeVoceEsta');
+    //console.log(one);
+    //console.dir(one); //lista todas as propriedades no console
+    
+    //2. Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+    const pai = one.parentElement;
+    pai.style.color = 'coral';
+    //console.log(two);
+    
+    //3. Acesse o primeiroFilhoDoFilho e adicione um texto a ele.
+    const three = one.firstElementChild;
+    three.innerText = 'Exercicio 3 - adicionando texto no PrimeiroFilhoDoFilho'
+    
+    //4. Acesse o primeiroFilho a partir de pai.
+    const firstSon = pai.firstElementChild;
+    //console.log(firstSon);
+
+    //5. Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta .
+    const five = one.previousElementSibling;
+    //console.log(five);
+    
+    //6. Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .
+    const attention = one.nextSibling;
+    //console.log(attention);
+    
+    //7. Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta .
+    const thirdSon = one.nextElementSibling;
+    //console.log(thirdSon);
+
+    //8. Agora acesse o terceiroFilho a partir de pai .
+    const eight = pai.lastElementChild.previousElementSibling;
+    //console.log(eight);
+  
+  </script>
+</body>
+</html>
