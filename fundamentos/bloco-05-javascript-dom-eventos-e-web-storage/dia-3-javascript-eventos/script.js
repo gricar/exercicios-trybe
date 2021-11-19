@@ -133,3 +133,16 @@ function zoomIn() {
     })
 }
 zoomIn()
+
+/* Exercício 7:
+Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.*/
+
+function tarefaPersonalizada(taskName) {
+    const getTarefa = document.querySelector('.my-tasks');
+    const tagTask = document.createElement('span');
+    
+    tagTask.innerText = taskName + '\n';
+    getTarefa.appendChild(tagTask);
+}
+tarefaPersonalizada('cozinhar');
+
