@@ -114,3 +114,22 @@ function botaoSexta() {
 
 botaoSexta();
 
+/* Exercício 6:
+Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.*/
+const getDia = document.getElementsByClassName('day')[0];
+
+function zoomOut() {
+    getDia.addEventListener('mouseover', function(evento) {
+        evento.target.style.fontSize = '250%';
+        evento.target.style.fontWeight = '600';
+    })
+}
+zoomOut()
+
+function zoomIn() {
+    getDia.addEventListener('mouseleave', function(evento) {
+        evento.target.style.fontSize = '100%';
+        evento.target.style.fontWeight = '200';
+    })
+}
+zoomIn()
