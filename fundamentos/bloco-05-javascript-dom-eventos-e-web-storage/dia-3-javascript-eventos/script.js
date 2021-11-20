@@ -157,3 +157,20 @@ function legendaColor(color) {
 }
 legendaColor('coral');
 console.log(getTarefa);
+
+/* Exercício 9:
+Implemente uma função que adiciona um evento que, ao clicar no elemento com a tag <div> referente a cor da sua tarefa, atribua a este elemento a classe task selected , ou seja, quando sua tarefa possuir a classe task selected , ela estará selecionada.*/
+
+function clicarLegenda() {
+    const getLegenda = document.querySelector('.task');
+
+    getLegenda.addEventListener('click', function() {
+        if (getLegenda.classList == 'task') {
+            getLegenda.classList.add('selected');  //adiciona
+        } else {
+            getLegenda.className = 'task'; //sobreescreve
+        }
+    })
+}
+
+clicarLegenda()
