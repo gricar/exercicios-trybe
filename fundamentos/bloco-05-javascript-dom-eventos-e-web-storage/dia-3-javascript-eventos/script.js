@@ -156,14 +156,13 @@ function legendaColor(color) {
     getTarefa.appendChild(legendaDiv);
 }
 legendaColor('coral');
-console.log(getTarefa);
+//console.log(getTarefa);
 
 /* Exercício 9:
 Implemente uma função que adiciona um evento que, ao clicar no elemento com a tag <div> referente a cor da sua tarefa, atribua a este elemento a classe task selected , ou seja, quando sua tarefa possuir a classe task selected , ela estará selecionada.*/
+/*const getLegenda = document.querySelector('.task');
 
 function clicarLegenda() {
-    const getLegenda = document.querySelector('.task');
-
     getLegenda.addEventListener('click', function() {
         if (getLegenda.classList == 'task') {
             getLegenda.classList.add('selected');  //adiciona
@@ -173,4 +172,56 @@ function clicarLegenda() {
     })
 }
 
-clicarLegenda()
+clicarLegenda()*/
+
+/* Exercício 10:
+Implemente uma função que adiciona um evento que, ao clicar em um dia do mês no calendário, atribua a este dia a cor da legenda da sua tarefa selecionada.*/
+
+/*function diaColor() {
+    const taskColor = getLegenda.style.backgroundColor;
+    const diaCalendario = document.querySelectorAll('day');
+    diaCalendario.addEventListener('click', function(event) {
+        for (let index = 0; index < diaCalendario.length; i += 1) {
+
+        }
+    })
+    console.log(diaCalendario);
+}
+
+diaColor()*/
+
+function setTaskClass() {
+    let selectedTask = document.getElementsByClassName('task selected');
+    let myTasks = document.querySelector('.task');
+  
+    myTasks.addEventListener('click', function(event) {
+      if (selectedTask.length === 0) {
+        event.target.className = 'task selected';
+      } else {
+        event.target.className = 'task';
+      }
+    });
+  };
+  
+  setTaskClass();
+
+
+
+function setDayColor() {
+    let selectedTask = document.getElementsByClassName('task selected');
+    let days = document.querySelector('#days');
+    let taskDiv = document.querySelector('.task');
+    let taskColor = taskDiv.style.backgroundColor;
+    
+    days.addEventListener('click', function(event){
+      let eventTargetColor = event.target.style.color;
+      if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+        let color = selectedTask[0].style.backgroundColor;
+        event.target.style.color = color;
+      } else if (eventTargetColor === taskColor && selectedTask.length !== 0) {
+        event.target.style.color = 'rgb(119,119,119)';
+      }
+    });
+  };
+  
+  setDayColor();
