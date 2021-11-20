@@ -136,9 +136,9 @@ zoomIn()
 
 /* Exercício 7:
 Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.*/
+const getTarefa = document.querySelector('.my-tasks');
 
 function tarefaPersonalizada(taskName) {
-    const getTarefa = document.querySelector('.my-tasks');
     const tagTask = document.createElement('span');
     
     tagTask.innerText = taskName + '\n';
@@ -146,3 +146,14 @@ function tarefaPersonalizada(taskName) {
 }
 tarefaPersonalizada('cozinhar');
 
+/* Exercício 8:
+Implemente uma função que adiciona uma legenda com cor para a tarefa criada no exercício anterior. Esta função deverá receber como parâmetro uma string ("cor") e criar dinamicamente um elemento de tag <div> com a classe task .*/
+
+function legendaColor(color) {
+    const legendaDiv = document.createElement('div');
+    legendaDiv.className = 'task';
+    legendaDiv.style.backgroundColor = color;
+    getTarefa.appendChild(legendaDiv);
+}
+legendaColor('coral');
+console.log(getTarefa);
