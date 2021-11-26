@@ -1,0 +1,9 @@
+fieldset {
+    display: block;
+    background-color: rgb(58, 92, 94);
+}
+legend {
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+  }

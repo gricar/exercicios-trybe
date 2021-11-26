@@ -1,0 +1,72 @@
+<!-- Bloco 6 - HTML e CSS: Forms, Flexbox e Responsivo
+Exercício - Criando um formulário de currículo. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Currículo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formulário para cadastro de currículos</h1>
+        <p>Preencha os campos abaixo</p>
+    </header>
+    <main>
+      <form id='form-cv'>  
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="userName">Nome
+                <input type="text" name="" id="userName" maxlength="40" required>
+            </label>
+            <label for="email">Email
+                <input type="text" name="" id="email" maxlength="50" required>
+            </label>
+            <label for="cpf">CPF
+                <input type="text" name="" id="cpf" maxlength="11" required>
+            </label>
+            <label for="endereco">Endereço
+                <input type="text" name="" id="endereco" maxlength="200" required>
+            </label>
+            <label for="cidade">Cidade
+                <input type="text" name="" id="cidade" maxlength="28" required>
+            </label>Estado
+            <select name="estadosBrasil" id="todosEstados" required>
+                <option selected disabled>Selecione uma opção</option>
+            </select>
+            <label for="">Tipo de imóvel</label>
+            <label for="casa">
+                <input type="radio" name="moradia" id="casa" required>Casa
+            </label>
+            <label for="apto">
+                <input type="radio" name="moradia" id="apto" required>Apartamento
+            </label>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Dados do último emprego</legend>
+            <label for="curriculo">Resumo do currículo</label>
+            <textarea name="" id="curriculo" cols="100" rows="20" maxlength="1000" required></textarea>
+            <label for="cargo">Cargo
+                <input type="text" name="" id="cargo" maxlength="40" required>
+            </label>
+            <label for="descricaoCargo">Descrição do cargo
+                <input type="text" name="" id="descricaoCargo" maxlength="500" required>
+            </label>
+            <label for="dataInicio">Data do início
+                <input type="text" name="" id="dataInicio" maxlength="10" required placeholder="dd/mm/aaaa"> <!-- fazer validação via JS -->
+            </label>
+        </fieldset>
+      </form>
+      <button type="submit" id="submit">Enviar</button>
+      <button id="clear">Limpar</button>
+    </main>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
