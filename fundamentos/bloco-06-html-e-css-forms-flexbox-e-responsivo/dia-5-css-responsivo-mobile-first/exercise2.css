@@ -6,3 +6,19 @@ html {
   box-sizing: inherit;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cornflowerblue;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu li {
+  padding: 10px 15px;
+  margin-right: 20px;
+}
