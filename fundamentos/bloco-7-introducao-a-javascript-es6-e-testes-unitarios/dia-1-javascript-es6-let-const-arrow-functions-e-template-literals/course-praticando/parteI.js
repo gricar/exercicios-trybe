@@ -58,9 +58,12 @@ const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 console.log(teste); */
 
 const orderdedArray = array => {
-  let ascendentOrder = array.sort( function(a, b) {return a-b})
+  /* const ascendentOrder = array.sort( function(a, b) {return a-b}) */
+  const ascendentOrder = array.sort((a, b) => a -b);
   return ascendentOrder;
 }
 const sortedArray = orderdedArray(oddsAndEvens);
 
 console.log(`Os números ${sortedArray} se encontram ordenados de forma crescente !`);
+
+//console.log(`Os números ${oddsAndEvens.sort((a, b) => a - b)} se encontram ordenados de forma crescente !`);
