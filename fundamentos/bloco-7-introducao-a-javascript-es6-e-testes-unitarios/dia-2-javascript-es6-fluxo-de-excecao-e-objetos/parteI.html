@@ -1,0 +1,51 @@
+<!-- Bloco 7.2 JavaScript ES6 - Fluxo de exceção e Objetos
+Parte I -->
+
+<!DOCTYPE html>
+<html lang='pt-BR'>
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Calculadora</title>
+</head>
+<body>
+  <p>Informe dois números para realizar a soma:</p>
+  <label for='value1'>Valor 1:</label>
+  <input type='text' id='value1'>
+  <label for='value2'>Valor 2:</label>
+  <input type='text' id='value2'>
+  <button id='button'>Somar</button>
+  <p id='result'></p>
+  <script>
+    function validateInputs(value1, value2) {
+      if (isNaN(value1) || isNaN(value2)) {  //verifica se é NaN -> Not a Number;
+        throw new Error('Informe apenas números para realizar a soma');
+      }
+      if (!value1 || !value2) {  //!value will return true for every "falsy" value (empty string, 0, null, false, undefined, NaN)
+        throw new Error('Informe os dois valores para realizar a soma');
+      }
+    };
+    
+    function sum() {
+      try {
+        const value1 = document.getElementById('value1').value;
+        const value2 = document.getElementById('value2').value;
+        const result = parseInt(value1) + parseInt(value2);
+        validateInputs(value1, value2);
+        document.getElementById('result').innerHTML = `Resultado: ${result}`;
+      } catch(err) {
+        document.getElementById('result').innerHTML = `Erro: ${err.message}`;
+      } finally { //executa a limpeza dos inputs independente se teve o erro ou nao...
+        document.getElementById('value1').value = '';
+        document.getElementById('value2').value = '';
+      }
+    }
+    
+    window.onload = () => {
+      const button = document.getElementById('button');
+      button.addEventListener('click', sum);
+    }
+  </script>
+</body>
+</html>
