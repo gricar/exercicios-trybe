@@ -75,3 +75,17 @@ const estudantes = [
   },
 ];
 
+// a) Função para buscar e imprimir o nome completo de todos os estudantes que estudam no turno da manhã.
+//Utilizando 'for'
+const allNameStudents = [];
+
+for (let index = 0; index < estudantes.length; index += 1 ) {
+  if(estudantes[index].turno === 'Manhã') {
+    allNameStudents.push(`${estudantes[index].nome} ${estudantes[index].sobrenome}`)
+  }
+}
+console.log(allNameStudents);
+
+//utilizando 'map' & 'filter'
+const allStudents = estudantes.filter(stud => (stud.turno === 'Manhã')).map((estudante) => `${estudante.nome} ${estudante.sobrenome}`);
+console.log(allStudents);
