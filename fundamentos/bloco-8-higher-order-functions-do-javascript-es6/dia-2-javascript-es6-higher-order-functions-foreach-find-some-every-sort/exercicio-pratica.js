@@ -69,7 +69,7 @@ const books = [
 function authorBornIn1947() {
   return books.find(birthAuthor => birthAuthor.author.birthYear === 1947).author.name;
 }
-console.log(authorBornIn1947());
+//console.log(authorBornIn1947());
 
 //exercise2
 //2 - Retorne o nome do livro de menor nome
@@ -82,7 +82,7 @@ function smallerName() {
   });
   return nameBook;
 };
-console.log(smallerName());
+//console.log(smallerName());
 
 /* 1) Declaramos a variável nameBook sem nenhum valor;
 2) Aplica-se a condicional if utilizando operadores lógicos. O primeiro é o not (!) antes de nameBook . Fazemos isso, pois o fato de nameBook não guardar nenhum valor é retornado "undefined" por padrão, consequentemente o JavaScript interpreta ele como um valor "falsy", que se traduz como "false" propriamente. Desta maneira, ao utilizar o operador not (!) antes de nameBook, estamos negando que ele seja falso, ou seja, convertendo-o para "true";
@@ -100,4 +100,13 @@ function getNamedBook() {
 //exercise4
 // 4 - Ordene os livros por data de lançamento em ordem decrescente.
 function booksOrderedByReleaseYearDesc() { return books.sort((bookA, bookB) => bookB.releaseYear - bookA.releaseYear); }
-console.log(booksOrderedByReleaseYearDesc());
+//console.log(booksOrderedByReleaseYearDesc());
+
+//exercise5
+// 5 - Faça uma função que retorne true, se todas as pessoas autoras nasceram no século XX, ou false , caso contrário.
+const expectedResult5 = false;
+
+function everyoneWasBornOnSecXX() {
+  return books.every(book => (book.author.birthYear > 1900 && book.author.birthYear <= 2000));
+}
+console.log(everyoneWasBornOnSecXX());
