@@ -7,7 +7,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {contents.map((item) => <UserProfile user={item} />)}
+        {contents.map((userData) => <UserProfile key={userData.id} user={userData} />)}
       </div>
     );
   }
