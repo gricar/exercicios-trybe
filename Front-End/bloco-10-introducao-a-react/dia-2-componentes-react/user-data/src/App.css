@@ -1,0 +1,14 @@
+.App > div {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 200px;
+}
+
+.user {
+  align-self: center;
+}
+
+img {
+  height: 100px;
+}
