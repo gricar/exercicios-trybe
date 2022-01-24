@@ -1,6 +1,4 @@
-// arquivo App.js, criado pelo create-react-app, modificado
 import React from 'react';
-import './App.css';
 import Order from './Order';
 
 class App extends React.Component {
