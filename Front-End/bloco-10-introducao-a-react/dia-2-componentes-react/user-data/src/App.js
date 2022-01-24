@@ -18,10 +18,18 @@ class App extends React.Component {
       avatar: "https://cdn.pixabay.com/photo/2017/01/31/13/05/cameo-2023867_640.png"
     };
 
+    const gabriel = {
+      id: 26,
+      name: "Gabriel",
+      email: "gabriel@gmail.com",
+      avatar: "https://cdn.pixabay.com/photo/2021/12/14/20/21/book-6871220_960_720.jpg"
+    };
+
     return (
       <div className="App">
         <UserProfile user={joao} />
         <UserProfile user={amelia} />
+        <UserProfile user={gabriel} />
       </div>
     );
   }
