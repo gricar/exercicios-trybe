@@ -1,0 +1,22 @@
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+.App > div {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 200px;
+  background-color: darkolivegreen;
+  border-radius: 15px;
+  margin: 5px;
+}
+
+.user {
+  align-self: center;
+}
+
+img {
+  height: 100px;
+}

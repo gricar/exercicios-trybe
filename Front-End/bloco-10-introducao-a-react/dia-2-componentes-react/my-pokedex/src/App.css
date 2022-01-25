@@ -1,0 +1,35 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokedex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokemonCard {
+  display: flex;
+  background-color:rgba(192, 192, 87, 0.699); 
+  margin: 5px;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px gray solid;
+  border-radius: 10px;
+  height: 200px;
+  min-width: 300px;
+  transition-duration: 0.5s;
+}
+
+.pokemonCard:hover {
+  transform: scale(1.03);
+  transition-duration: 0.5s;
+}
+
+.pokemonDescription{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
