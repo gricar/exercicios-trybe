@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import NameInput from './components/NameInput';
+import Input from './components/Input';
 
 class App extends Component {
 
@@ -10,6 +10,7 @@ class App extends Component {
       teamSelected: '',
       name: '',
       cpf: '',
+      email: '',
       description: '',
     }
 
@@ -23,7 +24,7 @@ class App extends Component {
   }
 
   render () {
-    const { teamSelected, name, cpf, description } = this.state;
+    const { teamSelected, name, cpf, email, description } = this.state;
     return (
       <div>
         <h1>Formulário</h1>
@@ -36,18 +37,9 @@ class App extends Component {
             <option value="bra">Bragantino</option>
           </select>
 
-          <NameInput name={ name } onInputChange={ this.handleChange }/>
-
-          <label htmlFor="cpf">
-            CPF:
-            <input
-            type="number"
-            id="cpf"
-            name="cpf"
-            onChange={ this.handleChange }
-            value={ cpf }
-          />
-          </label>
+          <Input type="text" name="name" value={ name } onInputChange={ this.handleChange }/>
+          <Input type="number" name="cpf" value={ cpf } onInputChange={ this.handleChange }/>
+          <Input type="email" name="email" value={ email } onInputChange={ this.handleChange }/>
 
           <label>
             Dissertação:
