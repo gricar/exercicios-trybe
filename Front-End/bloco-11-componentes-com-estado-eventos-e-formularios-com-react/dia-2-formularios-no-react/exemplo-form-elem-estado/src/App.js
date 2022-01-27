@@ -12,19 +12,23 @@ class App extends Component {
       cpf: '',
       email: '',
       description: '',
+      confirma: 'false',
     }
 
     this.handleChange = this.handleChange.bind(this)
   }
 
-  handleChange(event) {
+  handleChange({ target }) {
+    const { name } = target;
+    const value = target.type === 'checkbox' ? target.checked : target.value; /* essa logica é exclusiva para o checkbox */
+    
     this.setState({
-      [event.target.name] : event.target.value
+      [name] : value
     })
   }
 
   render () {
-    const { teamSelected, name, cpf, email, description } = this.state;
+    const { teamSelected, name, cpf, email, description, confirma } = this.state;
     return (
       <div>
         <h1>Formulário</h1>
@@ -40,6 +44,7 @@ class App extends Component {
           <Input type="text" name="name" value={ name } onInputChange={ this.handleChange }/>
           <Input type="number" name="cpf" value={ cpf } onInputChange={ this.handleChange }/>
           <Input type="email" name="email" value={ email } onInputChange={ this.handleChange }/>
+          <Input type="checkbox" name="confirma" checked={ confirma } onInputChange={ this.handleChange }/>
 
           <label>
             Dissertação:
