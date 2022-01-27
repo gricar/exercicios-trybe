@@ -7,16 +7,24 @@ class App extends Component {
     super()
     this.state = {
       teamSelected: '',
-      nome: '',
+      name: '',
+      cpf: '',
       description: '',
     }
 
-    this.handleChangeTeam = this.handleChangeTeam.bind(this);
+    this.handleChange = this.handleChange.bind(this)
+    /* this.handleChangeTeam = this.handleChangeTeam.bind(this);
     this.handleChangeName = this.handleChangeName.bind(this);
-    this.handleChangeTextArea = this.handleChangeTextArea.bind(this);
+    this.handleChangeTextArea = this.handleChangeTextArea.bind(this); */
   }
 
-  handleChangeTeam(event){
+  handleChange(event) {
+    this.setState({
+      [event.target.name] : event.target.value
+    })
+  }
+
+  /* handleChangeTeam(event){
     this.setState({ teamSelected: event.target.value })
   }
 
@@ -26,16 +34,16 @@ class App extends Component {
 
   handleChangeTextArea(event) {
     this.setState({ description: event.target.value })
-  }
+  } */
 
   render () {
-    const { teamSelected, nome, description } = this.state;
+    const { teamSelected, nome, cpf, description } = this.state;
     return (
       <div>
         <h1>Formulário</h1>
         <h3>Selecione seu time favorito</h3>
         <form>
-          <select name="times" value={ teamSelected } onChange={ this.handleChangeTeam }>
+          <select name="teamSelected" value={ teamSelected } onChange={ this.handleChange }>
             <option selected value="selecione">Selecione</option>
             <option value="cor">Corinthians</option>
             <option value="bah">Bahia</option>
@@ -48,19 +56,25 @@ class App extends Component {
               type="text"
               id="name"
               name="name"
-              onChange={ this.handleChangeName }
+              onChange={ this.handleChange }
               value={ nome }
             />
           </label>
 
           <label htmlFor="cpf">
             CPF:
-            <input type="number" id="cpf" name="cpf" />
+            <input
+            type="number"
+            id="cpf"
+            name="cpf"
+            onChange={ this.handleChange }
+            value={ cpf }
+          />
           </label>
 
           <label>
             Dissertação:
-            <textarea value={ description } onChange={ this.handleChangeTextArea } />
+            <textarea name="description" value={ description } onChange={ this.handleChange } />
           </label>
         </form>
       </div>
