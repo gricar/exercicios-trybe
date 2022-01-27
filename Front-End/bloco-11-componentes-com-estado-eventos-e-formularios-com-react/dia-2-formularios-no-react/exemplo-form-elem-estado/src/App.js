@@ -44,7 +44,7 @@ class App extends Component {
           <Input type="text" name="name" value={ name } onInputChange={ this.handleChange }/>
           <Input type="number" name="cpf" value={ cpf } onInputChange={ this.handleChange }/>
           <Input type="email" name="email" value={ email } onInputChange={ this.handleChange }/>
-          <Input type="checkbox" name="confirma" checked={ confirma } onInputChange={ this.handleChange }/>
+          <Input type="checkbox" name="confirma" value={ confirma } onInputChange={ this.handleChange }/>
 
           <label>
             Dissertação:
