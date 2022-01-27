@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import NameInput from './components/NameInput';
 
 class App extends Component {
 
@@ -13,9 +14,6 @@ class App extends Component {
     }
 
     this.handleChange = this.handleChange.bind(this)
-    /* this.handleChangeTeam = this.handleChangeTeam.bind(this);
-    this.handleChangeName = this.handleChangeName.bind(this);
-    this.handleChangeTextArea = this.handleChangeTextArea.bind(this); */
   }
 
   handleChange(event) {
@@ -24,20 +22,8 @@ class App extends Component {
     })
   }
 
-  /* handleChangeTeam(event){
-    this.setState({ teamSelected: event.target.value })
-  }
-
-  handleChangeName(event) {
-    this.setState({ nome: event.target.value })
-  }
-
-  handleChangeTextArea(event) {
-    this.setState({ description: event.target.value })
-  } */
-
   render () {
-    const { teamSelected, nome, cpf, description } = this.state;
+    const { teamSelected, name, cpf, description } = this.state;
     return (
       <div>
         <h1>Formulário</h1>
@@ -50,16 +36,7 @@ class App extends Component {
             <option value="bra">Bragantino</option>
           </select>
 
-          <label htmlFor="name">
-            name:
-            <input 
-              type="text"
-              id="name"
-              name="name"
-              onChange={ this.handleChange }
-              value={ nome }
-            />
-          </label>
+          <NameInput name={ name } onInputChange={ this.handleChange }/>
 
           <label htmlFor="cpf">
             CPF:
