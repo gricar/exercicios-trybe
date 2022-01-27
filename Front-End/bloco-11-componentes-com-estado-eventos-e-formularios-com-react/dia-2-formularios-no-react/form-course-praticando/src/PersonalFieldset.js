@@ -18,6 +18,7 @@ class PersonalFieldset extends Component {
             onChange={ handleChange }
             value={ nameValue }
           />
+          { !nameValue.length ? ' -nome inválido- ' : ' -ok- '}
         </label>
 
         <label htmlFor="email">
@@ -29,6 +30,8 @@ class PersonalFieldset extends Component {
             onChange={ handleChange }
             value={ emailValue }
           />
+          { !emailValue.match(/^\S+@\S+$/i)
+              ? ' -email inválido- ' : ' -ok- ' }
         </label>
 
         <label htmlFor="age">
@@ -43,6 +46,7 @@ class PersonalFieldset extends Component {
             <option value="adult">Maior que 18</option>
             <option value="underage">Menor que 18</option>
           </select>
+          { !ageValue.length ? ' -idade inválida- ' : ' -ok- '}
         </label>
       </fieldset>
     );
