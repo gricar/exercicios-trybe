@@ -13,6 +13,7 @@ const INITIAL_STATE = {
   curriculo: '',
   cargo: '',
   descricao: '',
+  submitted: false,
 }
 
 class App extends Component {
@@ -51,6 +52,10 @@ class App extends Component {
 
   validateEndereco = (value) => value.replace(/[^\w\s]/gi, '');
 
+  sendForm = () => { this.setState({ submitted: true }) }
+
+  resetForm = () => { this.setState(INITIAL_STATE) }
+
   render() {
     return (
       <main>
@@ -58,6 +63,8 @@ class App extends Component {
         handleChange={ this.handleChange }
         onBlurHandler = { this.onBlurHandler }
         currentState={ this.state }
+        sendForm={ this.sendForm }
+        resetForm={ this.resetForm }
         />
       </main>
     );

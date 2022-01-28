@@ -6,10 +6,10 @@ import PersonalData from "./PersonalData";
 
 class Form extends Component {
   render() {
-    const { handleChange, onBlurHandler, currentState } = this.props;
+    const { handleChange, onBlurHandler, currentState, sendForm, resetForm } = this.props;
 
     return(
-      <main>
+      <form>
         <PersonalData 
           handleChange={ handleChange }
           onBlurHandler={ onBlurHandler }
@@ -18,7 +18,17 @@ class Form extends Component {
         <JobData
           handleChange={ handleChange }
         />
-      </main>
+        <input
+          type="button"
+          value="Enviar"
+          onClick={ sendForm }
+        />
+        <input
+          type="reset"
+          value="Limpar"
+          onClick={ resetForm }
+        />
+      </form>
     );
   }
 }
