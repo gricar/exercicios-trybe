@@ -6,7 +6,6 @@ class PersonalData extends Component {
   render() {
 
     const { handleChange, onBlurHandler, currentState } = this.props;
-    console.log(currentState.cidade);
 
     return (
       <fieldset>

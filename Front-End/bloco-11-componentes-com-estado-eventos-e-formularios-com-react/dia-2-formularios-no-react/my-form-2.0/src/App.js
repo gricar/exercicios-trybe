@@ -1,6 +1,7 @@
 import './App.css';
 import React, { Component } from 'react';
 import Form from './components/Form';
+import DadosFormToDisplay from './components/DadosFormToDisplay';
 
 const INITIAL_STATE = {
   nome: '',
@@ -57,6 +58,8 @@ class App extends Component {
   resetForm = () => { this.setState(INITIAL_STATE) }
 
   render() {
+    const { submitted } = this.state;
+
     return (
       <main>
         <Form 
@@ -66,6 +69,9 @@ class App extends Component {
         sendForm={ this.sendForm }
         resetForm={ this.resetForm }
         />
+
+      { submitted && <DadosFormToDisplay currentState={ this.state } /> }
+
       </main>
     );
   }
