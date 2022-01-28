@@ -5,7 +5,8 @@ const states = ['Rio de Janeiro', 'Minas Gerais', 'Amapá', 'Amazonas', 'São Pa
 class PersonalData extends Component {
   render() {
 
-    const { handleChange } = this.props;
+    const { handleChange, onBlurHandler, currentState } = this.props;
+    console.log(currentState.cidade);
 
     return (
       <fieldset>
@@ -60,8 +61,10 @@ class PersonalData extends Component {
             name="cidade"
             type="text"
             maxLength="28"
-            onChange={ handleChange }
             required
+            value={ currentState.cidade }
+            onChange={ handleChange }
+            onBlur={ onBlurHandler }
           />
         </label>
 
@@ -79,7 +82,7 @@ class PersonalData extends Component {
                 <option key={ index }>{ state }</option>
               )) }
         </select>
-        
+
          <div>
           <label htmlFor="casa">
             <input

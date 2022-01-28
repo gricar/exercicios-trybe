@@ -22,6 +22,8 @@ class App extends Component {
     this.state = INITIAL_STATE;
 
     this.handleChange = this.handleChange.bind(this);
+    this.onBlurHandler = this.onBlurHandler.bind(this);
+
   }
 
   handleChange({ target }) {
@@ -33,9 +35,17 @@ class App extends Component {
     this.updateState(name, value);
   }
 
+  onBlurHandler({ target }) {
+    let { name, value } = target;
+
+    if (name === 'cidade') value = value.replace(/[1-9]/g, '');
+
+    this.updateState(name, value);
+  }
+
   updateState(name, value) {
     this.setState((state) => ({
-      [name] : value,
+      [name] : value, 
     }))
   }
 
@@ -46,6 +56,8 @@ class App extends Component {
       <main>
         <Form 
         handleChange={ this.handleChange }
+        onBlurHandler = { this.onBlurHandler }
+        currentState={ this.state }
         />
       </main>
     );
