@@ -48,4 +48,11 @@ describe('testando implementações others functions', () => {
     expect(mockFirstFunction).toHaveBeenCalledTimes(1);
     expect(mockFirstFunction).toHaveBeenCalledWith('GabriEL');
   });
+
+  test('mockando função para retornar a última letra de uma string', () => {
+    const mockSecondFunction = jest.spyOn(service, 'returnFirstLetterOnly').mockImplementationOnce((str) => str.charAt(str.length -1));
+
+    expect(mockSecondFunction('Ultima')).toBe('a');
+    expect(mockSecondFunction).toHaveBeenCalledTimes(1);
+  });
 });
