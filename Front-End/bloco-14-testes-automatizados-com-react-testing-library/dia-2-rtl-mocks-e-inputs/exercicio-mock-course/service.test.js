@@ -55,4 +55,11 @@ describe('testando implementações others functions', () => {
     expect(mockSecondFunction('Ultima')).toBe('a');
     expect(mockSecondFunction).toHaveBeenCalledTimes(1);
   });
+
+  test('mockando função deve receber três strings e concatená-las', () => {
+    const mockThirdFunction = jest.spyOn(service, 'concatTwoWords').mockImplementationOnce((str1, str2, str3) => str1.concat(str2, str3));
+
+    expect(mockThirdFunction('Tr', 'yb', 'e!')).toBe('Trybe!');
+    expect(mockThirdFunction).toHaveBeenCalledTimes(1);
+  });
 });
