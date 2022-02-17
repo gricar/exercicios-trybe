@@ -1,6 +1,6 @@
 const service = require('./service');
 
-describe('testando implementações', () => {
+describe('testando implementações randomFunction', () => {
   test('Validando a função "randomNumber"', () => {
     service.randomNumber = jest.fn().mockReturnValue(10);  // Utilize o mock e defina o retorno padrão como 10.
   
@@ -37,5 +37,15 @@ describe('testando implementações', () => {
     expect(service.randomNumber).toHaveBeenCalled();
     expect(service.randomNumber).toHaveBeenCalledTimes(1);
     expect(service.randomNumber).toHaveBeenCalledWith(5);
+  });
+});
+
+describe('testando implementações others functions', () => {
+  test('mockando função para retornar a string em caixa baixa.', () => {
+    const mockFirstFunction = jest.spyOn(service, 'transformStringToUpper').mockImplementationOnce((value) => value.toLowerCase());
+
+    expect(mockFirstFunction('GabriEL')).toBe('gabriel');
+    expect(mockFirstFunction).toHaveBeenCalledTimes(1);
+    expect(mockFirstFunction).toHaveBeenCalledWith('GabriEL');
   });
 });

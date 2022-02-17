@@ -1,5 +1,11 @@
 const randomNumber = () => Math.floor(Math.random() * 101);
 
-// console.log(randomNumber());
+// Crie três funções
+const transformStringToUpper = (value) => value.toUpperCase();
 
-module.exports = { randomNumber };
+const returnFirstLetterOnly = (str) => str.charAt(0);
+
+const concatTwoWords = (strA, strB) => strA.concat(strB);
+
+
+module.exports = { randomNumber, transformStringToUpper, returnFirstLetterOnly, concatTwoWords };
