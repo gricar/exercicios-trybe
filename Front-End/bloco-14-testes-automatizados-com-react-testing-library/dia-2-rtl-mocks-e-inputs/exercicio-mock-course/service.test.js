@@ -62,4 +62,11 @@ describe('testando implementações others functions', () => {
     expect(mockThirdFunction('Tr', 'yb', 'e!')).toBe('Trybe!');
     expect(mockThirdFunction).toHaveBeenCalledTimes(1);
   });
+
+  // Após criar os testes, restaure a implementação da primeira função.
+  test('restaurando a implementação da primeira função', () => {
+    service.transformStringToUpper.mockRestore();
+
+    expect(service.transformStringToUpper("lowercase")).toBe("LOWERCASE");
+  })
 });
