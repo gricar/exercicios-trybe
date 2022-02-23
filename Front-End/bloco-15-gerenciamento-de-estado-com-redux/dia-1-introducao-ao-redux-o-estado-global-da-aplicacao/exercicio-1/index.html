@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Redux Exercise</title>
     <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
     <style>
       body {
@@ -40,22 +40,25 @@
 
       const reducer = (state = ESTADO_INICIAL, action) => {
         switch(action.type) {
-          case 'NEXT_COLORS':
+          case 'NEXT_COLOR':
             return {
               ...state,
-              index: state.index = state.colors.length - 1 ? 0 : state.index + 1,
+              index: state.index === state.colors.length - 1 ? 0 : state.index + 1,
             };
           case 'PREVIOUS_COLOR':
             return {
               ...state,
-              index: state.index = state.colors.length - 1 ? 0 : state.index - 1,
+              index: state.index === state.colors.length - 1 ? 0 : state.index - 1,
             };
           default: 
             return state;
         }
       };
 
-      const store = Redux.createStore(reducer);
+      const store = Redux.createStore(
+        reducer,
+        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),  // extensão para funcionar o devtools Redux -> ver: https://github.com/reduxjs/redux-devtools/tree/main/extension#installation
+        );
 
       const btnPrevious = document.getElementById('previous');
       const btnNext = document.getElementById('next');
@@ -63,6 +66,12 @@
       btnPrevious.addEventListener('click', () => store.dispatch({ type: 'PREVIOUS_COLOR' }))
       btnNext.addEventListener('click', () => store.dispatch({ type: 'NEXT_COLOR' }))
 
+      store.subscribe(() => {
+        const { colors, index } = store.getState();
+        console.log(index);
+        document.getElementById('value').innerHTML = colors[index];
+        document.getElementById('container').style.backgroundColor = colors[index];
+      });
     </script>
   </body>
 </html>
