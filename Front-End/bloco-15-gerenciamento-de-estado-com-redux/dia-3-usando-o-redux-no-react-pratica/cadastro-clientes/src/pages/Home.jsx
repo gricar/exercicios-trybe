@@ -6,7 +6,7 @@ class Home extends Component {
     return (
       <div>
         <h3>Bem-vindo ao sistema de cadastramento!</h3>
-        <Link to="/Login">Faça seu login :)</Link>
+        <Link to="/login">Faça seu login :)</Link>
       </div>
     );
   }
