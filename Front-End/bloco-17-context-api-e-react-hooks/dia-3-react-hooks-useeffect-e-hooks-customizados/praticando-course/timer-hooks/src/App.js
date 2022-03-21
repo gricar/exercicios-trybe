@@ -1,5 +1,5 @@
 import React from 'react';
-import useTimer from './components/useTimer';
+import useTimer from './Hooks/useTimer';
 
 function App() {
   const { number, isMultiple, timer } = useTimer();
