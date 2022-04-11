@@ -1,0 +1,39 @@
+COMANDOS UTILIZADOS NO EXERCÍCIO DO COURSE
+
+I - Baixando a imagem do Debian
+docker pull debian:stable-slim
+
+
+II - Criando e Executando ume container no modo interativo, utilizando essa imagem
+docker container run -it debian:stable-slim
+
+//outra solução
+docker container create -it debian:stable-slim // apenas cria
+docker container start <CONTAINER ID>  // executa o container a partir do ID criado
+
+
+III - Encerrando o terminal
+exit
+
+
+IV - Verificando na lista de containers
+docker ps -l  //mostrar qual foi o último container criado
+
+//alternativas
+docker container ls -l 
+docker container ls -a
+
+
+V - Inicie o mesmo container novamente, sem criar outro.
+docker start <CONTAINER ID || NAMES>
+
+docker container ls -a  //o container ficou ativo (campo STATUS ) após isso.
+
+
+VI - Retome o container que foi criado anteriormente nesse exercício .
+docker attach <CONTAINER ID || NAMES>
+
+
+VII - Remova somente o container criado para esse exercício.
+docker container rm <CONTAINER ID || NAMES>
+
