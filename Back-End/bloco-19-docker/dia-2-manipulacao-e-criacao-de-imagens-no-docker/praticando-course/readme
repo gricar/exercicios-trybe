@@ -1,0 +1,10 @@
+#Após criado o Dockerfile, Builde e execute um container baseado em sua imagem sem passar nenhum comando.
+
+#terminal:
+docker image build ./ -t cowsay
+
+#Agora execute um novo container passando sua mensagem para testar
+docker container run cowsay -f moofasa "#VQV TRYBE"
+
+#exibir um dragão junto com a vaquinha.
+docker container run cowsay -f dragon-and-cow "#VQV TRYBE"
