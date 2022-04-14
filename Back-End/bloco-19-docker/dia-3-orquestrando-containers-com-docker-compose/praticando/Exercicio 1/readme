@@ -20,6 +20,8 @@ docker container rm <CONTAINER ID || NAMES>
 
 10) Obtenha o IMAGE ID do servidor;
 docker images
+#ou filtrando pela imagem específica:
+docker images -f reference=httpd
 
 11) exclua a imagem.
 docker rmi -f <IMAGE ID>
