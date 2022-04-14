@@ -1,0 +1,25 @@
+2) Crie um container para manter um servidor httpd:2.4 Apache e vincule sua porta interna com a porta 4545 da sua máquina local.
+ref: https://hub.docker.com/_/httpd
+
+docker run -d --name exercicio1 -p 4545:80 -v "/home/gabriel/Exercicios - Trybe/Back-End/bloco-19-docker/dia-3-orquestrando-containers-com-docker-compose/praticando/Exercicio 1/:/usr/local/apache2/htdocs" httpd:2.4
+
+3) Acessando
+http://localhost:4545/missao_trybe.html
+
+5) Obtenha o id do container httpd:2.4 ;
+docker container ls
+
+6) Obtenha o Mounts através da propriedade Source que deve mostrar o volume desse container no Docker Host .
+docker inspect <CONTAINER ID>
+
+7) pare o container httpd:2.4 ;
+docker container stop <CONTAINER ID || CONTAINER NAME>
+
+8) Exclua o seu container;
+docker container rm <CONTAINER ID || NAMES>
+
+10) Obtenha o IMAGE ID do servidor;
+docker images
+
+11) exclua a imagem.
+docker rmi -f <IMAGE ID>
