@@ -1,0 +1,7 @@
+Após feito o arquivo docker-compose.yaml
+
+1) no terminal subir o arquivo
+docker-compose up
+
+2) Abrir no navegador a porta configurada
+localhost:8000

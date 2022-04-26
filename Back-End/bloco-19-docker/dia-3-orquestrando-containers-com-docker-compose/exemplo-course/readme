@@ -1,0 +1,26 @@
+#Exemplo de Network
+
+1) Criar uma rede tipo "bridge"
+docker network create -d bridge minha-rede
+
+2) É possível verificar a criação
+docker network ls
+
+3) Criando um container
+docker container run -itd --name container-1 busybox
+
+4) É possível verificar a criação
+docker container ls
+
+5) Colocando este container na rede criada
+docker network connect minha-rede container-1
+
+6) Criando um container e já conectando-o na rede
+docker container run -it --name container-2 --network minha-rede busybox
+
+7) Após esse passo, o terminal já está dentro do container-2;
+8) Para testar a comunicação com o container-1, basta fazer um ping (teste de comunicação - transmissão e recepção)
+ping container-1
+
+9) Os bytes tem que estar 100%
+10) Encerrar e exit
