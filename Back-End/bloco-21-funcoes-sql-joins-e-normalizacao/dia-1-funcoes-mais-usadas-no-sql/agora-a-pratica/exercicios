@@ -20,7 +20,7 @@ SELECT
 	ROUND(MAX(SALARY), 2),
 	ROUND(MIN(SALARY), 2),
 	ROUND(SUM(SALARY), 2),
-	ROUND(AVG(SALARY), 2),
+	ROUND(AVG(SALARY), 2)
 FROM hr.employees;
 
 -- 6. Escreva uma query que exiba a quantidade de pessoas que trabalham como pessoas programadoras ( IT_PROG ).
@@ -37,7 +37,7 @@ GROUP BY JOB_ID;
 SELECT JOB_ID, SUM(SALARY)
 FROM hr.employees
 GROUP BY JOB_ID
-WHERE JOB_ID = "IT_PROG";
+HAVING JOB_ID = "IT_PROG";
 
 -- 9. Escreva uma query que exiba em ordem decrescente a média salarial de todos os cargos, exceto das pessoas programadoras ( IT_PROG ).
 SELECT JOB_ID, AVG(SALARY) AS 'avg_salary'
@@ -94,8 +94,8 @@ FROM hr.employees;
 SELECT last_name, hire_date
 FROM hr.employees
 WHERE hire_date BETWEEN '1987-07-01' AND '1987-07-31';
---OR
-WHERE MONTH(hire_date) = 7 AND YEAR(hire_date) = 1987;
+-- OR
+-- WHERE MONTH(hire_date) = 7 AND YEAR(hire_date) = 1987;
 
 -- 18: 🚀 Exiba as seguintes informações de cada funcionário: nome , sobrenome , tempo que trabalha na empresa (em dias) .
 SELECT first_name, last_name,
