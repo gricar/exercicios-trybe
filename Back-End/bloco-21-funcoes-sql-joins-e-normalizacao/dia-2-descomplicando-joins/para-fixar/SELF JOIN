@@ -1,0 +1,15 @@
+-- 1) Queremos saber o Nome das pessoas colaboradoras e suas respectivas gerências (manager) cujos departamentos (department) são diferentes.
+SELECT
+		CONCAT(colab.first_name, ' ', colab.last_name) AS 'Colaborador',
+		CONCAT(ger.first_name, ' ', ger.last_name) AS 'Gerente'
+FROM hr.employees AS colab
+INNER JOIN hr.employees AS ger ON colab.manager_id = ger.employee_id
+WHERE colab.department_id <> ger.department_id;
+
+-- 2) Exiba o Nome e a quantidade de pessoas lideradas de cada pessoa gerente.
+SELECT
+		CONCAT(ger.first_name, ' ', ger.last_name) AS 'Gerente',
+		COUNT(*)
+FROM hr.employees AS ger
+INNER JOIN hr.employees AS colab ON colab.manager_id = ger.employee_id
+GROUP BY ger.employee_id;
