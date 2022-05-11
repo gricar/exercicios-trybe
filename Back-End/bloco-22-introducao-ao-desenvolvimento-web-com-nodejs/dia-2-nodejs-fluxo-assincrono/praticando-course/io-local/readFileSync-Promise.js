@@ -13,4 +13,4 @@ fs.readFile(nomeDoArquivo, 'utf8')
   });
 
   
-// rodar no terminal node readFileSync
+// rodar no terminal node readFileSync-Promise
