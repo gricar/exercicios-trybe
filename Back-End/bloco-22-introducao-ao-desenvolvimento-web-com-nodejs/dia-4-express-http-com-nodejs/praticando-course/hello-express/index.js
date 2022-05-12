@@ -13,3 +13,6 @@ app.listen(3001, () => {
 
 // node index.js ou npm start
 // acessar a url http://localhost:3001/hello
+
+// com o nodemon instalado basta rodar o:
+// npm run dev
