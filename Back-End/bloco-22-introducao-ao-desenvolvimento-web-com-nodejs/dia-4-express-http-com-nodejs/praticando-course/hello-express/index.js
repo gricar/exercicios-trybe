@@ -11,5 +11,5 @@ app.listen(3001, () => {
 }); // Pedir ao Express que crie um servidor HTTP e escute por requisições na porta 3001;
 
 
-// node index.js
+// node index.js ou npm start
 // acessar a url http://localhost:3001/hello
