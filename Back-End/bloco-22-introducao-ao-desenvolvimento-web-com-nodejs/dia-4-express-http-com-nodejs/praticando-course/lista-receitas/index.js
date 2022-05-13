@@ -87,3 +87,5 @@ app.all('*', function (req, res) {
 app.listen(3001, () => {
   console.log('Aplicação ouvindo na porta 3001');
 });
+
+// para verificar o PUT, POST utilizei o insomnia 
