@@ -1,7 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const { getSimpsons, setSimpsons } = require('./utils/fs-utils');
-const authMiddleware = require('./middleware/authMiddleware');
+const authMiddleware = require('./middleware/authMiddleware'); // Bonus
+const crypto = require('crypto'); // Bonus
 
 const app = express();
 app.use(bodyParser.json());
@@ -81,7 +82,24 @@ app.post('/simpsons', async (req, res) => {
   } catch (error) {
     return res.status(500).end();
   }
-	
+});
+
+// Bonus
+// 2) Crie uma rota POST '/signup'
+// receber, no body da requisição, os campos email, password, firstName e phone.
+app.post('/signup', (req, res) => {
+  try {
+    const { email, password, firstName, phone } = req.body;
+
+    if ([email, password, firstName, phone].includes(undefined)) {
+      return res.status(401).json({ message: 'missing fields' });
+    }
+
+    const token = crypto.randomBytes(8).toString('hex');  //generateRandomToken
+    return res.status(200).json({ token });
+  } catch (error) {
+    return res.status(500).end();
+  }
 });
 
 app.listen(3224, () => {
