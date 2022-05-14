@@ -1,0 +1,13 @@
+npm init -y
+
+#instalar as dependencias
+npm i express body-parser
+
+npm i nodemon -D
+  scripts
+    "dev" : "nodemon index.js"
+
+# npm run dev
+
+#.gitignore
+  node_modules
