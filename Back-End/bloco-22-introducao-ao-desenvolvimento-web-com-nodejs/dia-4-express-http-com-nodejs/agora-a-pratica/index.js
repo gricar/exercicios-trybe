@@ -56,6 +56,27 @@ app.get('/simpsons/:id', async (req, res) => {
   }
 });
 
+// 8) Crie um endpoint POST /simpsons 🚀 -> O corpo da requisição deve receber o seguinte JSON: { id: <id-da-personagem>, name: '<nome-da-personagem>' }.
+app.post('/simpsons', async (req, res) => {
+	try {
+		const { id, name } = req.body;
+
+    const simpsons = await getSimpsons();
+		const simpson = simpsons.find((s) => s.id === id);
+		if (simpson) {
+			return res.status(409).json({ message: 'id already exists' }); // status 409 -> conflict
+		}
+		
+		simpsons.push({ id, name });
+
+		await setSimpsons(simpsons);
+
+    return res.status(204).end();
+  } catch (error) {
+    return res.status(500).end();
+  }
+	
+});
 
 app.listen(3224, () => {
   console.log('Aplicação ouvindo na porta 3324');
