@@ -1,9 +1,15 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const { getSimpsons, setSimpsons } = require('./utils/fs-utils');
+const authMiddleware = require('./middleware/authMiddleware');
 
 const app = express();
 app.use(bodyParser.json());
+
+// Bonus
+// 1) Adicione autenticação a todos os endpoints.
+// deve ser enviado através do header Authorization E ter exatamente 16 caracteres.
+app.use(authMiddleware);
 
 // 1) Crie uma rota GET /ping
 app.get('/ping', (_req, res) => res.json({ "message": "pong" }));
