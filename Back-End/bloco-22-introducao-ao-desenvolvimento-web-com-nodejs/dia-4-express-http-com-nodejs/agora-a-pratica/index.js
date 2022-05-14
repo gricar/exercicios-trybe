@@ -1,0 +1,12 @@
+// 1) Crie uma rota GET /ping
+const express = require('express');
+const bodyParser = require('body-parser');
+
+const app = express();
+app.use(bodyParser.json());
+
+app.get('/ping', (_req, res) => res.json({ "message": "pong" }));
+
+app.listen(3224, () => {
+  console.log('Aplicação ouvindo na porta 3324');
+});
