@@ -40,6 +40,21 @@ app.get('/simpsons', async (_req, res) => {
   }
 });
 
+// 7) Crie um endpoint GET /simpsons/:id 🚀
+app.get('/simpsons/:id', async (req, res) => {
+	try {
+		const { id } = req.params;
+
+    const simpsons = await getSimpsons();
+		const simpson = simpsons.find((s) => s.id === id);
+		if (!simpson) {
+			return res.status(404).json({ message: 'simpson not found' });
+		}
+    return res.status(202).json(simpson);
+  } catch (error) {
+    return res.status(500).end();
+  }
+});
 
 
 app.listen(3224, () => {
