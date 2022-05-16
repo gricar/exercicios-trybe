@@ -2,24 +2,15 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const crypto = require('crypto');
 
-
 const validateProductName = require('./middlewares/validateProductName');
 const validateInfos = require('./middlewares/validateInfos');
 const validateSaleDate = require('./middlewares/validateSaleDate');
 const validateWarrantyPeriod = require('./middlewares/validateWarranty');
+const authMiddleware = require('./middlewares/authMiddleware');
 
 const app = express();
 
 app.use(bodyParser.json());
-
-app.post('/sales',
-  validateProductName,
-  validateInfos,
-  validateSaleDate,
-  validateWarrantyPeriod,
-  (req, res) => {
-  res.status(201).json({ message: 'Venda cadastrada com sucesso!' });
-});
 
 app.post('/signup', (req, res) => {
   try {
@@ -37,6 +28,17 @@ app.post('/signup', (req, res) => {
   }
 });
 
-app.listen(3225, () => console.log("Ouvindo na porta 3225"));
+app.use(authMiddleware);
 
-//const { productName, infos: { saleDate, warrantyPeriod } } = req.body;
+app.post(
+  '/sales',
+  validateProductName,
+  validateInfos,
+  validateSaleDate,
+  validateWarrantyPeriod,
+  (req, res) => {
+    res.status(201).json({ message: 'Venda cadastrada com sucesso!' });
+  }
+);
+
+app.listen(3225, () => console.log('Ouvindo na porta 3225'));
