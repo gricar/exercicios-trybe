@@ -21,7 +21,21 @@ const getByAuthorId = async (authorId) => {
   }));;
 };
 
+const getById = async (id) => {
+	const query = 'SELECT * FROM model_example.books WHERE id = ?';
+	const [ book ] = await connection.execute(query, [id]);
+
+	if (book.length === 0) return null;
+	
+	return book.map(({ id, title, author_id }) => ({
+    id,
+    title,
+    authorId: author_id,
+  }))[0];
+};
+
 module.exports = {
 	getAll,
   getByAuthorId,
+  getById,
 };
