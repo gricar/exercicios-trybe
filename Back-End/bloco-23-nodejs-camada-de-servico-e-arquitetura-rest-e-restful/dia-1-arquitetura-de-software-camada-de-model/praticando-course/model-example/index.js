@@ -1,28 +1,14 @@
 const express = require('express');
 
-const Author = require('./models/Author');
-const Book = require('./models/Book');
-
 const app = express();
 
+const authorsRoute = require('./routes/authorsRoutes');
+const booksRoutes = require('./routes/booksRoutes');
 
-app.get('/authors', async (_req, res) => {
-	const authors = await Author.getAll();
+app.use('/authors', authorsRoute);
+app.use('/books', booksRoutes);
 
-	res.status(200).json(authors);
-});
-
-app.get('/books', async(req, res) => {
-  const { author_id } = req.query;
-
-  const books = (author_id)
-  ? await Book.getByAuthorId(author_id)
-  : await Book.getAll();
-
-  res.status(200).json(books);
-});
-
-// localhost:3000/books?author_id=2
+app.all('*', (req, res) => res.status(404).json({ message: `Rota '${req.path}' não existe!` }));
 
 const PORT = process.env.PORT || 3000;
 
