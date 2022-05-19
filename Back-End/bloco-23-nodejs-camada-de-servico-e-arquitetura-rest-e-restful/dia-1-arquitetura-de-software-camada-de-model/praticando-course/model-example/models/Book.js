@@ -1,5 +1,7 @@
 const connection = require('./connection');
 
+const Author = require('../models/Author');
+
 const getAll = async () => {
 	const [books] = await connection.execute('SELECT * FROM model_example.books;');
 	return books.map(({ id, title, author_id }) => ({
@@ -34,8 +36,21 @@ const getById = async (id) => {
   }))[0];
 };
 
+const isValid = (title, authorId) => {
+  if (!title || typeof title !== 'string' || title.length <= 3) return false;
+	if (!authorId || typeof authorId !== 'number' || !(Author.findById(authorId))) return false;
+	return true;
+};
+
+const create = async (title, authorId) => {
+  const query = 'INSERT INTO model_example.books (title, author_id) VALUES (?,?)';
+  await connection.execute(query, [ title, authorId ]);
+};
+
 module.exports = {
 	getAll,
   getByAuthorId,
   getById,
+  isValid,
+  create,
 };
