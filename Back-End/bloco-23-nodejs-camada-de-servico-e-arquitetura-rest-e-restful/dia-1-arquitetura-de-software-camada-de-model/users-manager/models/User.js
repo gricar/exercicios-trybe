@@ -26,9 +26,19 @@ const findAll = () => {
   .then(([results]) => results.map(formatUser));  // Passamos cada resultado pela função de formatação
 };
 
+const findById = (id)=>  {
+	return connection.execute('SELECT * FROM users WHERE id = ?', [id])
+		.then(([results]) => {
+		if (results[0]) return formatUser(results[0]);  // caso encontre o usuário pelo id, ele será o 1º item no result. assim podemos formatá-lo e retornar os dados
+		
+		return null;  // caso contrário retorne nulo
+		});
+}
+
 module.exports = {
   isValid,
   formatUser,
   create,
   findAll,
+  findById,
 };
