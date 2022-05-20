@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 
 const userRoutes = require('./routes/userRoutes');
 
-app.use('/user', userRoutes);app.use(middlewares.error);
+app.use('/user', userRoutes);
 app.use(middlewares.error);
 
 app.all('*', (req, res) => res.status(404).json({ message: `Rota '${req.path}' não existe!` }));

@@ -21,8 +21,14 @@ const create = ({ firstName, lastName, email, password }) => {
   .then(([result]) => ({ id: result.insertId, firstName, lastName, email })); // Obtemos o resultado da inserção e o utilizamos para obter o ID recém inserido - insertId
 };
 
+const findAll = () => {
+	return connection.execute('SELECT * from users;')
+  .then(([results]) => results.map(formatUser));  // Passamos cada resultado pela função de formatação
+};
+
 module.exports = {
   isValid,
   formatUser,
   create,
+  findAll,
 };
