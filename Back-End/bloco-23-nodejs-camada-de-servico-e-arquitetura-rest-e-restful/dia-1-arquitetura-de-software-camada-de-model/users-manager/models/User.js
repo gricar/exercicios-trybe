@@ -6,15 +6,11 @@ const userSchema = Joi.object({
 	lastName: Joi.string().required(),
 	email: Joi.string().email().required(),
 	password: Joi.string().min(6).required()}).messages({
-	'any.required': 'O campo {{: id="label" }} é obrigatório',
-	'string.min': 'O campo {{: id="label" }} deve ter, pelo menos, {{: id="limit" }} caracteres',
-	'string.email': 'Informe um email válido no campo {{: id="label" }}'});
+	'any.required': 'O campo {{#label}} é obrigatório',
+	'string.min': 'O campo {{#label}} deve ter, pelo menos, {{#limit}} caracteres',
+	'string.email': 'Informe um email válido no campo {{#label}}'
+});
 
-/* const isValid = (firstName, lastName, email, password) => {
-  if (!firstName || !lastName || !email || !password) return false;
-  return true;
-};
- */
 function isValid(userData) {
   return userSchema.validate(userData);
 };
