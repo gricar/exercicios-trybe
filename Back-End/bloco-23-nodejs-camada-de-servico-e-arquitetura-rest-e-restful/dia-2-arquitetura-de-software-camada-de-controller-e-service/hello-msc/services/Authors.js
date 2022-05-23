@@ -1,4 +1,5 @@
 const Author = require('../models/Author');
+const Contact = require('../models/Contact');
 
 const getAll = async () => Author.getAll();
 
@@ -17,7 +18,7 @@ const findById = async (id) => {
   return author;
 };
 
-const createAuthor = async (firstName, middleName, lastName) => {
+const createAuthor = async (firstName, middleName, lastName, contacts) => {
   const existingAuthor = await Author.findByName(firstName, middleName, lastName);
 
   if (existingAuthor) {
@@ -29,7 +30,12 @@ const createAuthor = async (firstName, middleName, lastName) => {
     };
   }
 
-  return Author.createAuthor(firstName, middleName, lastName);  // Caso a pessoa autora não exista e, portanto, possa ser criado
+  const { id } = await Author.createAuthor(firstName, middleName, lastName);  //pegar o id dela e consequentemente adicionar todos os contatos desta pessoa em uma tabela diferente
+
+  // add em outra tabela
+  await Promise.all(contacts.map((contact) => Contact.createContact(id, contact)));  //azer a inserção de vários dados no banco, precisamos aguardar todas as requisições serem "resolvidos" até que possamos prosseguir.
+
+  return ({ id, firstName, middleName, lastName, contacts });
 };
 
 module.exports = {
