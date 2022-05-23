@@ -29,9 +29,9 @@ const getById = async (id) => {
   if (book.length === 0) return null;
 
   return {
-    id: book.id,
-    title: book.title,
-    bookId: book.book_id,
+    id: book[0].id,
+    title: book[0].title,
+    authorId: book[0].author_id,
   };
 }
 
