@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const rescue = require('express-rescue');
@@ -20,6 +21,6 @@ app.post('/books', rescue(Book.createBook));
 
 app.use(errorMiddleware);
 
-const PORT = 3232;
+const PORT = process.env.PORT;
 
 app.listen(PORT, () => console.log(`Ouvindo a porta ${PORT}`));
