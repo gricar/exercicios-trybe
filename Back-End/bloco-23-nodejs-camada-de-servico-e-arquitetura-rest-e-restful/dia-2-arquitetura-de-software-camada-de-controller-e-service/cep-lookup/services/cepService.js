@@ -19,6 +19,7 @@ const findAddressByCep = async (cep) => {
 
 const registerNewCep = async ({ cep, logradouro, bairro, localidade, uf }) => {
   const existingCep = await cepModel.findAddressByCep(cep);
+  console.log(existingCep)
 
   if (existingCep) {
     return { error: { code: 'alreadyExists', message: 'CEP já existente' } };
@@ -32,4 +33,4 @@ const registerNewCep = async ({ cep, logradouro, bairro, localidade, uf }) => {
 module.exports = {
   findAddressByCep,
   registerNewCep,
-}
+};

@@ -21,10 +21,15 @@ const getNewCep = ({ cep, logradouro, bairro, localidade, uf }) => ({
 const findAddressByCep = async (cep) => {
   const treatedCep = cep.replace('-', '');  // Removemos todos os traços, pois armazenamos o CEP puro
 
-  const query = 'SELECT * FROM cep_lookup.ceps WHERE cep=?';
-  const cepNumber = await connection.execute(query, cep);
+  const query = 'SELECT cep, logradouro, bairro, localidade, uf FROM cep_lookup.ceps WHERE cep = ?';
 
-  return getNewCep(cepNumber);
+  // Executamos a query, selecionando o primeiro resultado, caso exista e assumindo `null`, caso contrário
+  const result = await connection.execute(query, [treatedCep])
+    .then(([results]) => (results.length ? results[0] : null));
+  
+  if (!result) return null;  // Caso nenhum resultado seja encontrado, retornamos `null`
+
+  return getNewCep(result);
 };
 
 const registerNewCep = async ({ cep: rawCep, logradouro, bairro, localidade, uf }) => {
@@ -35,11 +40,11 @@ const registerNewCep = async ({ cep: rawCep, logradouro, bairro, localidade, uf 
     VALUES (?, ?, ?, ?, ?)`;
   
   await connection.execute(query, [cep, logradouro, bairro, localidade, uf]);
-  
+
   return { cep, logradouro, bairro, localidade, uf };
 };
 
 module.exports = {
   findAddressByCep,
   registerNewCep,
-}
+};

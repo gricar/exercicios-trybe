@@ -3,8 +3,10 @@ const cepService = require('../services/cepService');
 
 const findAddressByCep = async (req, res, next) => {
   const { cep } = req.params;
+  console.log(cep);
 
   const address = await cepService.findAddressByCep(cep);
+  console.log(address);
 
   if (!address.error) return next(address.error);
 
@@ -34,4 +36,4 @@ const registerNewCep = async (req, res, next) => {
 module.exports = {
   findAddressByCep,
   registerNewCep,
-}
+};
