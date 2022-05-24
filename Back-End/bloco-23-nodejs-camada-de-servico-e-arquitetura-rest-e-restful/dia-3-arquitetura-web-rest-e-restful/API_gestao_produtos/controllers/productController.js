@@ -9,10 +9,14 @@ router.get('/', async (_req, res) => {
   res.status(200).json(products);
 });
 
-router.get('/get-by-id/:id', async (req, res) => {
+router.get('/:id', async (req, res) => {
   const product = await ProductModel.getById(req.params.id);
 
-  res.send(product);
+  if (product === null) {
+    return res.status(404).json({ message: 'Produto não encontrado' });
+  }
+
+  res.status(200).json(product);
 });
 
 router.post('/add-product', async (req, res) => {
