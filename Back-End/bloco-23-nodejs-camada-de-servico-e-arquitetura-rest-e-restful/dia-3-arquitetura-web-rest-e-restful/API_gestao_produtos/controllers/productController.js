@@ -30,10 +30,15 @@ router.post('/', async (req, res) => {
   res.status(201).json(newProduct);
 });
 
-router.post('/delete-product/:id', async (req, res) => {
-  const products = await ProductModel.exclude(req.params.id);
+router.delete('/:id', async (req, res) => {
+  const product = await ProductModel.getById(req.params.id);
 
-  res.send(products);
+  if (product === null) {
+    return res.status(404).json({ message: 'Produto não encontrado' });
+  }
+
+  await ProductModel.exclude(req.params.id);
+  res.status(204).json();
 });
 
 router.post('/update-product/:id', async (req, res) => {
