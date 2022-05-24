@@ -41,12 +41,20 @@ router.delete('/:id', async (req, res) => {
   res.status(204).json();
 });
 
-router.post('/update-product/:id', async (req, res) => {
+router.put('/:id', async (req, res) => {
   const { name, brand } = req.body;
 
-  const products = await ProductModel.update(req.params.id, name, brand);
+  if (name === undefined || brand === undefined) {
+    return res.status(404).json({ message: 'Informações do produto inválidas' });
+  }
 
-  res.send(products);
+  const product = await ProductModel.getById(req.params.id);
+  if (product === null) {
+    return res.status(404).json({ message: 'Produto não encontrado' });
+  }
+
+  await ProductModel.update(req.params.id, name, brand);
+  res.status(200).json({ name, brand });
 });
 
 module.exports = router;
