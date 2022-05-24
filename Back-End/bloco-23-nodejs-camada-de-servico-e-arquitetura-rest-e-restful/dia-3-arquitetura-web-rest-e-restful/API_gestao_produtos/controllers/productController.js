@@ -19,12 +19,15 @@ router.get('/:id', async (req, res) => {
   res.status(200).json(product);
 });
 
-router.post('/add-product', async (req, res) => {
+router.post('/', async (req, res) => {
   const { name, brand } = req.body;
 
-  const newProduct = await ProductModel.add(name, brand);
+  if (name === undefined || brand === undefined) {
+    return res.status(404).json({ message: 'Informações do produto inválidas' });
+  }
 
-  res.send(newProduct);
+  const newProduct = await ProductModel.add(name, brand);
+  res.status(201).json(newProduct);
 });
 
 router.post('/delete-product/:id', async (req, res) => {
