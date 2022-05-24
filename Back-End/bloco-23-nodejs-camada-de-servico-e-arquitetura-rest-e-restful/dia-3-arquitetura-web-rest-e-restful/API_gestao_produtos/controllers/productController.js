@@ -3,10 +3,10 @@ const ProductModel = require('../models/productModel');
 
 const router = express.Router();
 
-router.get('/list-products', async (req, res) => {
+router.get('/', async (_req, res) => {
   const products = await ProductModel.getAll();
 
-  res.send(products);
+  res.status(200).json(products);
 });
 
 router.get('/get-by-id/:id', async (req, res) => {
