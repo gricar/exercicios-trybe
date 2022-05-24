@@ -21,7 +21,7 @@ const findById = async (id) => {
 const createBook = async (title, bookId) => {
   const book = await Author.findById(bookId);
 
-  if (!author) {
+  if (!book) {
     return {
       error: {
         code: 'notFound',
