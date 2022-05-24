@@ -3,12 +3,10 @@ const cepService = require('../services/cepService');
 
 const findAddressByCep = async (req, res, next) => {
   const { cep } = req.params;
-  console.log(cep);
 
   const address = await cepService.findAddressByCep(cep);
-  console.log(address);
 
-  if (!address.error) return next(address.error);
+  if (address.error) return next(address.error);
 
   return res.status(200).json(address);
 };
