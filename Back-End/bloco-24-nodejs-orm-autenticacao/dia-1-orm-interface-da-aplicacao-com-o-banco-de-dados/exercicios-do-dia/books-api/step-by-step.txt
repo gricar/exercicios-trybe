@@ -33,3 +33,9 @@ $ npx sequelize seed:generate --name books
 1.1) Popular o arquivo seeder; executar o comando:
 $ npx sequelize db:seed:all
 
+2) Crie uma migration para adicionar a coluna publisher (editora) na tabela Books. Modifique as camadas de serviço para que esse campo seja utilizado no cadastro e na edição.
+$ npx sequelize migration:generate --name add-publisher-to-books
+
+-- editado arquivo
+$ npx sequelize db:migrate
+

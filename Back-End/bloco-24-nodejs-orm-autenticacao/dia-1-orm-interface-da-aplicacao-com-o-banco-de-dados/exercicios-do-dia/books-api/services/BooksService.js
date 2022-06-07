@@ -10,17 +10,18 @@ const getAll = async () => {
 
 const getById = (id) => Book.findByPk(id);
 
-const create = async ({ title, author, pageQuantity }) => {
-  const book = await Book.create({ title, author, pageQuantity });
+const create = async ({ title, author, pageQuantity, publisher }) => {
+  const book = await Book.create({ title, author, pageQuantity, publisher });
   return book;
 };
 
-const update = async (id, { title, author, pageQuantity }) => {
+const update = async (id, { title, author, pageQuantity, publisher }) => {
   const [bookUpdated] = await Book.update(
     {
       title,
       author,
-      pageQuantity
+      pageQuantity,
+      publisher
     },
     { where: { id } },
   );
