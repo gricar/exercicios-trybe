@@ -11,10 +11,24 @@ const getById = (id) => Book.findByPk(id);
 const create = async ({ title, author, pageQuantity }) => {
   const book = await Book.create({ title, author, pageQuantity });
   return book;
-}
+};
+
+const update = async (id, { title, author, pageQuantity }) => {
+  const [bookUpdated] = await Book.update(
+    {
+      title,
+      author,
+      pageQuantity
+    },
+    { where: { id } },
+  );
+
+  return bookUpdated;
+};
 
 module.exports = {
   getAll,
   getById,
   create,
+  update,
 };
