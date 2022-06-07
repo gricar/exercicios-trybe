@@ -13,4 +13,7 @@ $ npx sequelize db:migrate
 ---------------------------------------------------------------------------------------
 
 2) Crie o model Book utilizando a API do Sequelize.
+-- criado um arquivo "book" na pasta models com a função contendo os DataTypes
+
+---------------------------------------------------------------------------------------
 
