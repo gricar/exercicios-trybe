@@ -4,9 +4,13 @@ $ npx sequelize db:create
 1) Criado a "migration" para criar uma tabela de livros
 $ npx sequelize migration:generate --name create-books
 
-2) Preenchido o arquivo migration -> ...-create-books.js
+1.1) Preenchido o arquivo migration -> ...-create-books.js
 -- colocado as colunas e seus tipos e regras de preenchimento.
 
-3) Executando o comandar para criar a tabela no BD. Pode verificar MYSQL workbench
+1.2) Executando o comandar para criar a tabela no BD. Pode verificar MYSQL workbench
 $ npx sequelize db:migrate
+
+---------------------------------------------------------------------------------------
+
+2) Crie o model Book utilizando a API do Sequelize.
 
