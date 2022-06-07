@@ -17,3 +17,7 @@ $ npx sequelize db:migrate
 
 ---------------------------------------------------------------------------------------
 
+3) Crie um service BooksService com o método getAll para retornar uma lista de livros por meio do model Book.
+-- documentação tem a query: https://sequelize.org/docs/v6/core-concepts/model-querying-basics/
+
+---------------------------------------------------------------------------------------
