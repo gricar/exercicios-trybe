@@ -21,3 +21,6 @@ $ npx sequelize db:migrate
 -- documentação tem a query: https://sequelize.org/docs/v6/core-concepts/model-querying-basics/
 
 ---------------------------------------------------------------------------------------
+
+4) Crie um controller BooksController com o método getAll 
+5) Vincule a rota GET /books para acessar seu controller.
