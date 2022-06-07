@@ -2,7 +2,7 @@ const BookService = require('../services/BooksService');
 
 const getAll = async (req, res) => {
   const books = await BookService.getAll();
-  res.status(200).json(books);
+  return res.status(200).json(books);
 };
 
 const getById = async (req, res) => {
@@ -12,11 +12,17 @@ const getById = async (req, res) => {
 
   if (!book) return res.status(404).json({ message: 'Book not found' })
 
-  res.status(200).json(book);
+  return res.status(200).json(book);
 };
 
+const create = async (req, res) => {
+  const book = await BookService.create(req.body);
+
+  return res.status(201).json(book);
+}
 
 module.exports = {
   getAll,
   getById,
+  create,
 };
