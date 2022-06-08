@@ -1,0 +1,4 @@
+Feito o fork do exercicio do github
+
+-> aberto PR:
+https://github.com/gricar/exercise-sequelize-associations
