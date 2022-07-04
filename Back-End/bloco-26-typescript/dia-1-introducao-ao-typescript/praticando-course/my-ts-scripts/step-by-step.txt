@@ -1,0 +1,6 @@
+# Instalando as dependencias:
+  npm init -y
+
+  npm install -D @tsconfig/node16 @types/node typescript
+
+1)
