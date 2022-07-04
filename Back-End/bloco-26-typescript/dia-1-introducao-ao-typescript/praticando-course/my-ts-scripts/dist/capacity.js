@@ -1,9 +1,9 @@
 "use strict";
-const unitsVolume = ["kl", "hl", "dal", "l", "dl", "cl", "ml"];
+const unitsVolume = ["km³", "hm³", "dam³", "m³", "dm³", "cm³", "mm³"];
 function convertVolume(value, fromUnit, toUnit) {
     const fromIndex = unitsVolume.indexOf(fromUnit);
     const toIndex = unitsVolume.indexOf(toUnit);
     const exponent = (toIndex - fromIndex);
-    return value * Math.pow(10, exponent);
+    return value * Math.pow(1000, exponent);
 }
-console.log(convertVolume(30, 'l', 'ml'));
+console.log(convertVolume(30, 'm³', 'mm³'));
