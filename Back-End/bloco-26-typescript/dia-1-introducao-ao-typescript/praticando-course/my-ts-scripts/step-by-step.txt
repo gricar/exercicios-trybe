@@ -1,0 +1,23 @@
+# Instalando as dependencias:
+  npm init -y
+
+  npm install -D @tsconfig/node16 @types/node typescript
+
+1) Faça a correta tipagem do array por meio do tipo Character e da função usada para imprimir as informações básicas de todos os jogadores.
+
+2) Crie uma enum que represente os meses do ano.
+
+3) Crie uma enum que represente as estações climáticas do ano.
+
+4) Utilizando as enums criadas nos exercícios anteriores e o pacote `readline-sync`, que cria uma interface para ler o que for inserido no console, crie um programa que quando a pessoa usuária escolher o mês do ano e o hemisfério no terminal:
+ - Retorne em que estação aquele mês se encontra.
+ - Caso seja um mês que possua duas estações retorne ambas.
+
+-> Deve ser instalado a biblioteca e os types para o pacote.
+
+5) Crie um script para converter unidades de medida de comprimento
+
+10) tornar nossos scripts de unidades de medida mais interativos! Vamos adicionar input de quem usa o script. Para isso, utilize o pacote readline-sync,
+
+11) Crie um arquivo index.ts que pergunta qual conversão a pessoa usuária deseja realizar, e chama o script correspondente:
+O script deve ser acionado por meio do comando npm start no package.json;

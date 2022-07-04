@@ -1,0 +1,7 @@
+Após instalados as dependencias necessárias, realizar todas as funções:
+
+1) Compilar o programa
+npx tsc
+
+2) rodar o programa em node
+node ./dist/index.js
