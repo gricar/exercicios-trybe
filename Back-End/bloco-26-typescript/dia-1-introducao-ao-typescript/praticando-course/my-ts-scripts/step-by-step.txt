@@ -5,3 +5,6 @@
 
 1) Faça a correta tipagem do array por meio do tipo Character e da função usada para imprimir as informações básicas de todos os jogadores.
 
+2) Crie uma enum que represente os meses do ano.
+
+3) Crie uma enum que represente as estações climáticas do ano.
