@@ -3,4 +3,5 @@
 
   npm install -D @tsconfig/node16 @types/node typescript
 
-1)
+1) Faça a correta tipagem do array por meio do tipo Character e da função usada para imprimir as informações básicas de todos os jogadores.
+
