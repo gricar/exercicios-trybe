@@ -40,9 +40,18 @@ class BookService {
         return __awaiter(this, void 0, void 0, function* () {
             const bookFound = yield this.model.getById(id);
             if (!bookFound) {
-                throw new restify_errors_1.NotFoundError('NotFound');
+                throw new restify_errors_1.NotFoundError('Book not found :/');
             }
             return this.model.update(id, book);
+        });
+    }
+    remove(id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const bookFound = yield this.model.getById(id);
+            if (!bookFound) {
+                throw new restify_errors_1.NotFoundError('Book not found :/');
+            }
+            return this.model.remove(id);
         });
     }
 }

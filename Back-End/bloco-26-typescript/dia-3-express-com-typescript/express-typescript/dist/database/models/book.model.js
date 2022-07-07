@@ -43,5 +43,10 @@ class BookModel {
             yield this.connection.execute('UPDATE books SET title=?, price=?, author=?, isbn=? WHERE id=?', [title, price, author, isbn, id]);
         });
     }
+    remove(id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.connection.execute('DELETE FROM books WHERE id=?', [id]);
+        });
+    }
 }
 exports.default = BookModel;
