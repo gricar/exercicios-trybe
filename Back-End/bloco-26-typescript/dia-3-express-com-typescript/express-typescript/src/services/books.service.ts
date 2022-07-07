@@ -24,7 +24,7 @@ class BookService {
     return this.model.create(book);
   }
 
-  public async update(id: number, book: IBook): Promise<void> {
+  public async update(id: number, book: IBook): Promise<void> { //indica que o retorno da função é vazio -> void
     const bookFound = await this.model.getById(id);
     if (!bookFound) {
       throw new NotFoundError('Book not found :/');
