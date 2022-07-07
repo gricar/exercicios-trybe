@@ -14,6 +14,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const connection_1 = __importDefault(require("../database/models/connection"));
 const book_model_1 = __importDefault(require("../database/models/book.model"));
+const restify_errors_1 = require("restify-errors");
 class BookService {
     constructor() {
         this.model = new book_model_1.default(connection_1.default);
@@ -33,6 +34,15 @@ class BookService {
     create(book) {
         return __awaiter(this, void 0, void 0, function* () {
             return this.model.create(book);
+        });
+    }
+    update(id, book) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const bookFound = yield this.model.getById(id);
+            if (!bookFound) {
+                throw new restify_errors_1.NotFoundError('NotFound');
+            }
+            return this.model.update(id, book);
         });
     }
 }

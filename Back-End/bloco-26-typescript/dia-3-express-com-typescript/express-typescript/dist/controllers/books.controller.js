@@ -34,6 +34,12 @@ class BooksController {
             const bookCreated = yield this.bookService.create(book);
             return res.status(http_status_codes_1.StatusCodes.CREATED).json(bookCreated);
         });
+        this.update = (req, res) => __awaiter(this, void 0, void 0, function* () {
+            const id = Number(req.params.id);
+            const book = req.body;
+            yield this.bookService.update(id, book);
+            return res.status(http_status_codes_1.StatusCodes.NO_CONTENT).end();
+        });
     }
 }
 exports.default = BooksController;
