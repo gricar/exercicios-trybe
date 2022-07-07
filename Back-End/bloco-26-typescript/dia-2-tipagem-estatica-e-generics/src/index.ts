@@ -3,8 +3,6 @@ import Colors from './Colors';
 import Doors from './Doors';
 import Directions from './Directions';
 
-import Pizza from './Pizza';
-
 /* Exercício 1 e 2 */
 const carroStilo = new Car('Corolla', Colors.BLACK, 4);
 
@@ -23,8 +21,12 @@ carroStilo.closeTheDoor(Doors.BEHIND_DRIVER);
 
 // console.log(carroStilo.turnOn());
 
+/* ------------------------------------------------------------------ */
 
 /* Exercício 3 */
+
+import Pizza from './Pizza';
+
 const calabresa: Pizza = {
   flavor: 'calabresa',
   slices: 8
@@ -38,3 +40,31 @@ const nutela: Pizza = {
 }
 
 // console.log(nutela);
+
+/* ------------------------------------------------------------------ */
+
+/* Exercício 4 */
+import PizzaCommon from './PizzaCommon';
+import PizzaSugar from './PizzaSugar';
+import PizzaVegetarian from './PizzaVegetarian';
+
+const frango: PizzaCommon = {
+  flavor: 'Frango',
+  slices: 6,
+};
+
+// console.log(frango);
+
+const marshmallow: PizzaSugar = {
+  flavor: 'Marshmallow',
+  slices: 4,
+};
+
+// console.log(marshmallow);
+
+const cogumelos: PizzaVegetarian = {
+  flavor: 'Cogumelos',
+  slices: 6,
+};
+
+// console.log(cogumelos);
