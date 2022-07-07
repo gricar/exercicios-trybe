@@ -8,7 +8,7 @@ export default class BookModel {
     this.connection = connection;
   }
 
-  public async getAll(): Promise<IBook[]> { //indica que o retorno desta função é uma promessa e o tipo deve ser igual ao da Interface específicada
+  public async getAll(): Promise<IBook[]> { //indica que o retorno desta função é uma promessa e o tipo deve ser um array e os items (books) devem ser iguais ao da Interface específicada
     const [result] = await this.connection.execute('SELECT * FROM books');
     return result as IBook[];
   }
