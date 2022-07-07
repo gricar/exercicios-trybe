@@ -25,9 +25,8 @@ export default class BookModel {
   }
 
   public async getById(id: number): Promise<IBook> {
-    const result = await this.connection.execute('SELECT * FROM books WHERE id=?', [id]);
-    const [rows] = result;
-    const [book] = rows as IBook[];
+    const [result] = await this.connection.execute('SELECT * FROM books WHERE id=?', [id]);
+    const [book] = result as IBook[];
     return book;
   }
 

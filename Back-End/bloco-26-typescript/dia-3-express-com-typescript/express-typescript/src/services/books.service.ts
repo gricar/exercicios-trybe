@@ -15,9 +15,10 @@ class BookService {
     return books;
   }
 
-  public async getById(id: number): Promise<IBook> {
+  public async getById(id: number): Promise<IBook | null> {  //retorno pode ter dois tipos (generics) caso exista no DB
     const book = await this.model.getById(id);
-    return book;
+
+    return book || null;  //podemos especificar o retorno com null, caso não haja livros com esse id. entretando no controller já vai pegar como undefined. entao é opcional esse retorno.
   }
 
   public async create(book: IBook): Promise<IBook> {
