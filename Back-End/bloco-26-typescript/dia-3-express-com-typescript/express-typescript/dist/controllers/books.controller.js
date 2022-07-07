@@ -29,6 +29,11 @@ class BooksController {
             }
             return res.status(http_status_codes_1.StatusCodes.OK).json(book);
         });
+        this.create = (req, res) => __awaiter(this, void 0, void 0, function* () {
+            const book = req.body;
+            const bookCreated = yield this.bookService.create(book);
+            return res.status(http_status_codes_1.StatusCodes.CREATED).json(bookCreated);
+        });
     }
 }
 exports.default = BooksController;

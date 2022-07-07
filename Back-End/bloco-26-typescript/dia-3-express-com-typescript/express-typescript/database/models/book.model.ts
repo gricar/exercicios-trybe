@@ -1,5 +1,5 @@
 import { Pool, ResultSetHeader } from 'mysql2/promise';
-import Book from '../../interfaces/book.interface';
+import IBook from '../../interfaces/book.interface';
 
 export default class BookModel {
   public connection: Pool;
@@ -8,13 +8,13 @@ export default class BookModel {
     this.connection = connection;
   }
 
-  public async getAll(): Promise<Book[]> {
+  public async getAll(): Promise<IBook[]> {
     const result = await this.connection.execute('SELECT * FROM books');
     const [rows] = result;
-    return rows as Book[];
+    return rows as IBook[];
   }
 
-  public async create(book: Book): Promise<Book> {
+  public async create(book: IBook): Promise<IBook> {
     const { title, price, author, isbn } = book;
     const result = await this.connection.execute<ResultSetHeader>(
       'INSERT INTO books (title, price, author, isbn) VALUES (?, ?, ?, ?)',
@@ -25,10 +25,10 @@ export default class BookModel {
     return { id: insertId, ...book };
   }
 
-  public async getById(id: number): Promise<Book> {
+  public async getById(id: number): Promise<IBook> {
     const result = await this.connection.execute('SELECT * FROM books WHERE id=?', [id]);
     const [rows] = result;
-    const [book] = rows as Book[];
+    const [book] = rows as IBook[];
     return book;
   }
 }
