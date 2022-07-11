@@ -26,4 +26,7 @@ const juice = new OrderItem('Suco de Abacaxi', 5.00);
 const dessert = new OrderItem('Gelatina de Uva', 2.50);
 
 const order = new Order(client, [sanduba, juice, dessert], 'money', 0.1);
+
 console.log(order);
+console.log('Valor normal: ', order.calculateTotal());
+console.log('Valor com desconto: ', order.calculateTotalWithDiscount());

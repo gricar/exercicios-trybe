@@ -53,4 +53,17 @@ export default class Order {
 
     this._discount = value;
   }
+
+  calculateTotal(): number {
+    return this.items.
+      reduce((previousValue, item) => {
+        const total = previousValue += item.price;
+
+        return total;
+      }, 0)
+  }
+
+  calculateTotalWithDiscount(): number {
+    return this.calculateTotal() * (1 - this.discount);
+  }
 }
