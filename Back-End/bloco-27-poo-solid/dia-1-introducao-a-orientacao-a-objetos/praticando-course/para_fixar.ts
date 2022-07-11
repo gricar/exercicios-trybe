@@ -1,11 +1,11 @@
 class Tv {
   _brand: string;
   _size: number;
-  _resolution: number;
+  _resolution: string;
   _connections: string[];
   _connectedTo?: string;
 
-  constructor(brand: string, size: number, resolution: number, connections: string[]) {
+  constructor(brand: string, size: number, resolution: string, connections: string[]) {
     this._brand = brand;
     this._size = size;
     this._resolution = resolution;
@@ -17,6 +17,6 @@ class Tv {
   }
 }
 
-const samsungTv = new Tv('Samsung', 50, 1024, ['Ethernet', 'HDMI']);
+const samsungTv = new Tv('Samsung', 50, '4K', ['Ethernet', 'HDMI']);
 samsungTv.turnOn();
-//TV Samsung, 50", resolution: 1024, available connections: Ethernet,HDMI" 
+//TV Samsung, 50", resolution: 4K, available connections: Ethernet,HDMI" 
