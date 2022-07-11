@@ -8,7 +8,7 @@ interface IBook {
 
 export default IBook;
 
-/* outra alternativa */
+/* outra alternativa :) */
 
 // export interface NewBook {
 //   title: string;
