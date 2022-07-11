@@ -10,3 +10,5 @@ console.log('Notas das provas: ', personOne.examsGrades);
 
 personOne.worksGrades = [8, 6.5]; //só pode ter duas notas, senão lança erro.
 console.log('Notas de trabalho', personOne.worksGrades);
+
+console.log('Média geral das notas:', personOne.sumAverageGrade());
