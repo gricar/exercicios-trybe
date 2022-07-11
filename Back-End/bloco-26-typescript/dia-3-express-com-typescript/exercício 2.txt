@@ -18,4 +18,4 @@ O nome da categoria deve possuir pelo menos 3 caracteres;
 A query param de data de criação deve ser no formato: aaaa-mm-dd;
 
 // resolução
-https://github.com/gricar/praticando-typescript-express-ex-1/tree/main/atividade-2
+https://github.com/gricar/praticando-typescript-express-dia-26.3/tree/main/atividade-2

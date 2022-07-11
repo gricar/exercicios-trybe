@@ -19,4 +19,4 @@ O email deve possuir um formato de email válido (email@email.com);
 Ao criar um novo user, o email não pode já estar cadastrado.
 
 // resolução
-https://github.com/gricar/praticando-typescript-express-ex-1/tree/main/atividade-1
+https://github.com/gricar/praticando-typescript-express-dia-26.3/tree/main/atividade-1

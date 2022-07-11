@@ -17,4 +17,4 @@ O nome deve possuir pelo menos 3 caracteres;
 O tipo de comida deve possuir no mínimo 3 caracteres;
 
 //resolução
-https://github.com/gricar/praticando-typescript-express-ex-1/tree/main/atividade-4
+https://github.com/gricar/praticando-typescript-express-dia-26.3/tree/main/atividade-4

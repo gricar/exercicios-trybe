@@ -21,4 +21,4 @@ A data de fabricação não pode ser igual a data de validade;
 As query params de valor de preço inicial e final não podem receber valores negativos;
 
 //resolução
-https://github.com/gricar/praticando-typescript-express-ex-1/tree/main/atividade-3
+https://github.com/gricar/praticando-typescript-express-dia-26.3/tree/main/atividade-3
