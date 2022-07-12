@@ -5,6 +5,8 @@ import Superclass from "./Superclass";
 const myFunc = (object: Superclass) => {
   // Dentro dessa função, chame o método `sayHello` do objeto passado como parâmetro.
   object.sayHello();
+
+  console.log(object.isSuper ? 'Super!' : 'Sub!');
 };
 
 
