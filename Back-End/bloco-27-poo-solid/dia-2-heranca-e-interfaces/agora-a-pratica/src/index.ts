@@ -1,9 +1,14 @@
-import Person from "./class/Person";
-import Student from "./class/Student";
+import Subject from './class/Subject';
+import Teacher from './class/Teacher';
 
-// const gabriel = new Person('Gabriel', new Date('1996/02/16'));
-const gabrielEstudante = new Student('Gabriel', new Date('1996/02/16'));
+const math = new Subject('Matemática');
+const history = new Subject('História');
+const philosophy = new Subject('Filosofia');
 
-// console.log(gabrielEstudante);
-gabrielEstudante.examsGrades = [10, 7, 5, 6];
-console.log(gabrielEstudante);
+const marta = new Teacher('Marta da Silva', new Date('1980/03/30'), 2000, math);
+const joao = new Teacher('João Antônio da Costa', new Date('1982/04/21'), 2000, history);
+const lucio = new Teacher('Lucio Teixeira', new Date('1986/01/29'), 2000, philosophy);
+
+console.log(marta);
+console.log(joao);
+console.log(lucio);
