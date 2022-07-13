@@ -12,3 +12,13 @@ const lucio = new Teacher('Lucio Teixeira', new Date('1986/01/29'), 2000, philos
 console.log(marta);
 console.log(joao);
 console.log(lucio);
+
+/* Simulando erros */
+// const invalidTeacherSalary = new Teacher('GABIGOLLLL', new Date('1980/03/30'), -2000, math);
+// console.log(invalidTeacherSalary);
+
+// // deve retornar erro
+// const today = new Date();
+// today.setDate(today.getDate() + 1)
+// const tomorrow = today;
+// marta.admissionDate = tomorrow;
