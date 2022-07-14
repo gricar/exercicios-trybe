@@ -1,4 +1,4 @@
 export default interface Enrollable {
-  enrollment: string;
+  enrollment: string; //identificador único da matrícula
   generateEnrollment(): string;
 }
