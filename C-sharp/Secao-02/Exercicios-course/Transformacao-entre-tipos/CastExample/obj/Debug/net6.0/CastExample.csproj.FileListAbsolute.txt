@@ -1,0 +1,12 @@
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/bin/Debug/net6.0/CastExample.deps.json
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/bin/Debug/net6.0/CastExample.dll
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/bin/Debug/net6.0/CastExample.pdb
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/obj/Debug/net6.0/CastExample.csproj.AssemblyReference.cache
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/obj/Debug/net6.0/CastExample.GeneratedMSBuildEditorConfig.editorconfig
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/obj/Debug/net6.0/CastExample.AssemblyInfoInputs.cache
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/obj/Debug/net6.0/CastExample.AssemblyInfo.cs
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/obj/Debug/net6.0/CastExample.csproj.CoreCompileInputs.cache
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/obj/Debug/net6.0/CastExample.dll
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/obj/Debug/net6.0/refint/CastExample.dll
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/obj/Debug/net6.0/CastExample.pdb
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/obj/Debug/net6.0/ref/CastExample.dll
