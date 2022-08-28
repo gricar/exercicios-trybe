@@ -1,0 +1,15 @@
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Conhecendo-os-tipos-de-variaveis/Exemplo-residencia/bin/Debug/net6.0/Exemplo-residencia
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Conhecendo-os-tipos-de-variaveis/Exemplo-residencia/bin/Debug/net6.0/Exemplo-residencia.deps.json
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Conhecendo-os-tipos-de-variaveis/Exemplo-residencia/bin/Debug/net6.0/Exemplo-residencia.runtimeconfig.json
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Conhecendo-os-tipos-de-variaveis/Exemplo-residencia/bin/Debug/net6.0/Exemplo-residencia.dll
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Conhecendo-os-tipos-de-variaveis/Exemplo-residencia/bin/Debug/net6.0/Exemplo-residencia.pdb
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Conhecendo-os-tipos-de-variaveis/Exemplo-residencia/obj/Debug/net6.0/Exemplo-residencia.csproj.AssemblyReference.cache
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Conhecendo-os-tipos-de-variaveis/Exemplo-residencia/obj/Debug/net6.0/Exemplo-residencia.GeneratedMSBuildEditorConfig.editorconfig
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Conhecendo-os-tipos-de-variaveis/Exemplo-residencia/obj/Debug/net6.0/Exemplo-residencia.AssemblyInfoInputs.cache
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Conhecendo-os-tipos-de-variaveis/Exemplo-residencia/obj/Debug/net6.0/Exemplo-residencia.AssemblyInfo.cs
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Conhecendo-os-tipos-de-variaveis/Exemplo-residencia/obj/Debug/net6.0/Exemplo-residencia.csproj.CoreCompileInputs.cache
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Conhecendo-os-tipos-de-variaveis/Exemplo-residencia/obj/Debug/net6.0/Exemplo-residencia.dll
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Conhecendo-os-tipos-de-variaveis/Exemplo-residencia/obj/Debug/net6.0/refint/Exemplo-residencia.dll
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Conhecendo-os-tipos-de-variaveis/Exemplo-residencia/obj/Debug/net6.0/Exemplo-residencia.pdb
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Conhecendo-os-tipos-de-variaveis/Exemplo-residencia/obj/Debug/net6.0/Exemplo-residencia.genruntimeconfig.cache
+/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Conhecendo-os-tipos-de-variaveis/Exemplo-residencia/obj/Debug/net6.0/ref/Exemplo-residencia.dll
