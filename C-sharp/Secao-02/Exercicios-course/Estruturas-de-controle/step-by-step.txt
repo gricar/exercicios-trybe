@@ -1,0 +1,24 @@
+1) Criar uma nova solução
+  dotnet new sln
+
+2) Criar uma classlib
+  dotnet new classlib -o Poligonos
+
+3) Adicionando uma referencia (link) do projeto a solução
+  dotnet sln Estruturas-de-controle.sln add Poligonos/Poligonos.csproj
+
+4) Criar os arquivos de teste
+  dotnet new xunit -n Poligonos.Test
+
+5) Adicionando uma referencia (link) do teste a solução
+  dotnet sln Estruturas-de-controle.sln add Poligonos.Test/Poligonos.Test.csproj
+
+6) Adicionando uma referencia do teste ao arquivo que será testado
+  dotnet add Poligonos.Test/Poligonos.Test.csproj reference Poligonos/Poligonos.csproj
+
+7) Adicionando o fluent assertion
+  dotnet add Poligonos.Test/Poligonos.Test.csproj package FluentAssertions
+
+8) dotnet build
+
+9) dotnet test
