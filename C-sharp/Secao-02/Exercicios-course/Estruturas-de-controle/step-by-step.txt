@@ -1,0 +1,10 @@
+1) Criar uma nova solução
+  dotnet new sln
+
+2) Criar uma classlib
+  dotnet new classlib -o Poligonos
+
+3) Vinculando (link) o projeto a solução
+  dotnet sln Estruturas-de-controle.sln add Poligonos/Poligonos.csproj
+
+4)  
