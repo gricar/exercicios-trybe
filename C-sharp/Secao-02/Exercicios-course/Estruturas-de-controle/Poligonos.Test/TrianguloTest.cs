@@ -1,5 +1,6 @@
 using Xunit;
-// using FluentAssertions;
+using Poligonos;
+using FluentAssertions;
 
 namespace Poligonos.Test;
 

@@ -1,5 +1,5 @@
 ﻿namespace Poligonos;
-public class Triangulo
+public static class Triangulo
 {
   public static string IdentifyTriangle(double xSide, double ySide, double zSide)
   {       
