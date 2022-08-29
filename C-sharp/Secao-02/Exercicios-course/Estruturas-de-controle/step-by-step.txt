@@ -18,3 +18,7 @@
 
 7) Adicionando o fluent assertion
   dotnet add Poligonos.Test/Poligonos.Test.csproj package FluentAssertions
+
+8) dotnet build
+
+9) dotnet test

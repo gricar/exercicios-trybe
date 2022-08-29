@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Q07fUCFRzbvtpIdTt9IJjKS/LQGge0O3vD0Laczrp+7UyC827FQZEmk8hEfWfI1bh9ao4gsogz+Ajo/rxdHn2A==",
+  "dgSpecHash": "n3TTNtEqp/x5KsiTsPdXvK4KCQIbXGXvi3OOHms+HuQxpZ/jo8BAL+mK+KUAwld1yefa+duAGbIvcXvoSqanTA==",
   "success": true,
   "projectFilePath": "/home/gabriel/Exercicios - Trybe/C-sharp/Secao-02/Exercicios-course/Estruturas-de-controle/Poligonos.Test/Poligonos.Test.csproj",
   "expectedPackageFiles": [
     "/home/gabriel/.nuget/packages/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg.sha512",
-    "/home/gabriel/.nuget/packages/fluentassertions/6.7.0/fluentassertions.6.7.0.nupkg.sha512",
+    "/home/gabriel/.nuget/packages/fluentassertions/6.5.1/fluentassertions.6.5.1.nupkg.sha512",
     "/home/gabriel/.nuget/packages/microsoft.codecoverage/17.1.0/microsoft.codecoverage.17.1.0.nupkg.sha512",
     "/home/gabriel/.nuget/packages/microsoft.csharp/4.0.1/microsoft.csharp.4.0.1.nupkg.sha512",
     "/home/gabriel/.nuget/packages/microsoft.net.test.sdk/17.1.0/microsoft.net.test.sdk.17.1.0.nupkg.sha512",
