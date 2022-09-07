@@ -24,4 +24,14 @@
 
     return sum;
   }
+
+  public static int[,] FromArrayToTwoDimArray(int[] array, int lines, int columns)
+{
+    int[,] result = new int[lines, columns];
+    for (int i = 0; i < array.Length; i++)
+    {
+        result[i / lines, i % columns] = array[i];
+    }
+    return result;
+}
 }
