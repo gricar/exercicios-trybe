@@ -32,7 +32,7 @@ class App extends Component {
     return (
       <div>
         <h1>Formulário</h1>
-        <h3>Selecione seu time favorito</h3>
+        <h3>Selecione seu time favorito</h3>  
         <form>
           <select name="teamSelected" value={ teamSelected } onChange={ this.handleChange }>
             <option selected value="selecione">Selecione</option>
