@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CastExample
-build_property.ProjectDir = /home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/
+build_property.ProjectDir = /home/gabriel/Exercicios - Trybe/C-sharp/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/
