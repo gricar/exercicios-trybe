@@ -1,0 +1,15 @@
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-03/Exercicios-course/Estrutura-de-Arrays/MyExpenses/bin/Debug/net6.0/MyExpenses
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-03/Exercicios-course/Estrutura-de-Arrays/MyExpenses/bin/Debug/net6.0/MyExpenses.deps.json
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-03/Exercicios-course/Estrutura-de-Arrays/MyExpenses/bin/Debug/net6.0/MyExpenses.runtimeconfig.json
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-03/Exercicios-course/Estrutura-de-Arrays/MyExpenses/bin/Debug/net6.0/MyExpenses.dll
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-03/Exercicios-course/Estrutura-de-Arrays/MyExpenses/bin/Debug/net6.0/MyExpenses.pdb
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-03/Exercicios-course/Estrutura-de-Arrays/MyExpenses/obj/Debug/net6.0/MyExpenses.csproj.AssemblyReference.cache
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-03/Exercicios-course/Estrutura-de-Arrays/MyExpenses/obj/Debug/net6.0/MyExpenses.GeneratedMSBuildEditorConfig.editorconfig
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-03/Exercicios-course/Estrutura-de-Arrays/MyExpenses/obj/Debug/net6.0/MyExpenses.AssemblyInfoInputs.cache
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-03/Exercicios-course/Estrutura-de-Arrays/MyExpenses/obj/Debug/net6.0/MyExpenses.AssemblyInfo.cs
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-03/Exercicios-course/Estrutura-de-Arrays/MyExpenses/obj/Debug/net6.0/MyExpenses.csproj.CoreCompileInputs.cache
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-03/Exercicios-course/Estrutura-de-Arrays/MyExpenses/obj/Debug/net6.0/MyExpenses.dll
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-03/Exercicios-course/Estrutura-de-Arrays/MyExpenses/obj/Debug/net6.0/refint/MyExpenses.dll
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-03/Exercicios-course/Estrutura-de-Arrays/MyExpenses/obj/Debug/net6.0/MyExpenses.pdb
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-03/Exercicios-course/Estrutura-de-Arrays/MyExpenses/obj/Debug/net6.0/MyExpenses.genruntimeconfig.cache
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-03/Exercicios-course/Estrutura-de-Arrays/MyExpenses/obj/Debug/net6.0/ref/MyExpenses.dll
