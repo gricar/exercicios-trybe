@@ -8,7 +8,11 @@ ganhou ou perdeu o jogo."""
 import random
 
 
-WORDS = ["Fundamentos", "FrontEnd", "BackEnd", "Computer-Science", "Trybe"]
+# WORDS = ["Fundamentos", "FrontEnd", "BackEnd", "Computer-Science", "Trybe"]
+
+
+def retrieve_words(file):
+    return [word.strip() for word in file]
 
 
 def draw_secret_word(words):
@@ -39,5 +43,7 @@ def scrambled_word_game(secret_word, scrambled_word):
 
 
 if __name__ == "__main__":
-    secret_word, scrambled_word = draw_secret_word(WORDS)
+    with open("palavras.txt") as file:
+        words = retrieve_words(file)
+    secret_word, scrambled_word = draw_secret_word(words)
     scrambled_word_game(secret_word, scrambled_word)
