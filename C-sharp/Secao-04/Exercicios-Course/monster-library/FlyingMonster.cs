@@ -1,6 +1,8 @@
-public class FlyingMonster
+namespace monster_library;
+
+public class FlyingMonster : Monster
 {
-  public string Name { get; set; }
+  // public string Name { get; set; }  // já está implementado na classe base Monster
 
   public bool isFlying { get; set; } = false;
 
