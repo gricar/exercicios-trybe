@@ -44,3 +44,15 @@ class Circulo(FiguraGeometrica):
 
     def perimetro(self):
         return 2 * PI * self.raio
+
+
+square = Quadrado(7)
+print("Perémetro do quadrado", square.perimetro())
+print("Área do quadrado", square.area())
+
+
+rectangle = Retangulo(3, 6)
+print("Área do retangulo", rectangle.area())
+
+my_circulo = Circulo(5)
+print(my_circulo.area())

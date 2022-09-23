@@ -19,3 +19,9 @@ class Estatistica:
     def moda(cls, numbers):
         number, _ = Counter(numbers).most_common()[0]
         return number
+
+
+my_estatistica = Estatistica()
+
+media = my_estatistica.media([4, 6])
+print(media)
