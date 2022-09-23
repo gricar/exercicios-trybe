@@ -6,7 +6,7 @@ class ManipuladorDeLog(ABC):
     @classmethod
     @abstractmethod
     def log(cls, msg):
-        raise NotImplementedError
+        raise NotImplementedError #Como a classe é abstrata, ela é uma interface para que as demais tenham esse método 'log'; aqui não precisamos realizá-lo
 
 
 class LogEmArquivo(ManipuladorDeLog):
@@ -30,7 +30,7 @@ class Log:
         self.__manipuladores.add(manipulador)
 
     def info(self, msg):
-        self.__log('INFO', msg)
+        self.__log('INFO', msg) #invocando essa função, não precisa repeti-lá para outros métodos
 
     def alerta(self, msg):
         self.__log('ALERTA', msg)
@@ -48,3 +48,13 @@ class Log:
     def __formatar(self, nivel, msg):
         data = datetime.now().strftime('%d/%m/%Y %H:%M:%S')
         return f"[{nivel} - {data}]: {msg}"
+
+
+my_log_em_tela = LogEmTela()
+my_log = Log([my_log_em_tela])
+my_log.erro("ZeroDivisionError: division by zero")
+
+log_em_arquivo = LogEmArquivo()
+log = Log([log_em_arquivo])
+log.alerta("Gabriel testando python")
+log.alerta("Running P.O.O")
