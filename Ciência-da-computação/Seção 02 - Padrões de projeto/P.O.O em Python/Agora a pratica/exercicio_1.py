@@ -21,3 +21,28 @@ class TV:
 
     def ligar_desligar(self):
         self.__ligada = not self.__ligada
+
+    @property
+    def ligada(self):
+        return self.__ligada
+
+    @property
+    def volume(self):
+        return self.__volume
+
+    @property
+    def canal_atual(self):
+        return self.__canal
+
+
+my_samsung_tv = TV(50)
+
+my_samsung_tv.ligar_desligar()
+print("Ligando a TV:", my_samsung_tv.ligada)
+
+while my_samsung_tv.volume < 67:
+    my_samsung_tv.aumentar_volume()
+print("Aumentando o volume para:", my_samsung_tv.volume)
+
+my_samsung_tv.modificar_canal(17)
+print(my_samsung_tv.canal_atual)
