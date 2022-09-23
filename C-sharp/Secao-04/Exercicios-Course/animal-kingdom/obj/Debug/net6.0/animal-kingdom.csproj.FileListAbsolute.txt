@@ -1,0 +1,15 @@
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/animal-kingdom/bin/Debug/net6.0/animal-kingdom
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/animal-kingdom/bin/Debug/net6.0/animal-kingdom.deps.json
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/animal-kingdom/bin/Debug/net6.0/animal-kingdom.runtimeconfig.json
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/animal-kingdom/bin/Debug/net6.0/animal-kingdom.dll
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/animal-kingdom/bin/Debug/net6.0/animal-kingdom.pdb
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/animal-kingdom/obj/Debug/net6.0/animal-kingdom.csproj.AssemblyReference.cache
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/animal-kingdom/obj/Debug/net6.0/animal-kingdom.GeneratedMSBuildEditorConfig.editorconfig
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/animal-kingdom/obj/Debug/net6.0/animal-kingdom.AssemblyInfoInputs.cache
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/animal-kingdom/obj/Debug/net6.0/animal-kingdom.AssemblyInfo.cs
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/animal-kingdom/obj/Debug/net6.0/animal-kingdom.csproj.CoreCompileInputs.cache
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/animal-kingdom/obj/Debug/net6.0/animal-kingdom.dll
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/animal-kingdom/obj/Debug/net6.0/refint/animal-kingdom.dll
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/animal-kingdom/obj/Debug/net6.0/animal-kingdom.pdb
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/animal-kingdom/obj/Debug/net6.0/animal-kingdom.genruntimeconfig.cache
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/animal-kingdom/obj/Debug/net6.0/ref/animal-kingdom.dll
