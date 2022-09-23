@@ -6,7 +6,6 @@ class Estatistica:
     def media(cls, numbers):
         return sum(numbers) / len(numbers)
 
-    
     @classmethod
     def mediana(cls, numbers):
         numbers.sort()
@@ -15,7 +14,6 @@ class Estatistica:
             return (numbers[index - 1] + numbers[index]) / 2
 
         return numbers[index]
-    
 
     @classmethod
     def moda(cls, numbers):

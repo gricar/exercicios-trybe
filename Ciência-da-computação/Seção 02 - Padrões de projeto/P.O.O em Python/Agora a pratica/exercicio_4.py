@@ -6,7 +6,7 @@ class ManipuladorDeLog(ABC):
     @classmethod
     @abstractmethod
     def log(cls, msg):
-        raise NotImplementedError #Como a classe é abstrata, ela é uma interface para que as demais tenham esse método 'log'; aqui não precisamos realizá-lo
+        raise NotImplementedError  # Como a classe é abstrata, ela é uma interface para que as demais tenham esse método 'log'; aqui não precisamos realizá-lo
 
 
 class LogEmArquivo(ManipuladorDeLog):
@@ -30,7 +30,7 @@ class Log:
         self.__manipuladores.add(manipulador)
 
     def info(self, msg):
-        self.__log('INFO', msg) #invocando essa função, não precisa repeti-lá para outros métodos
+        self.__log('INFO', msg)  # invocando essa função, não precisa repeti-lá para outros métodos
 
     def alerta(self, msg):
         self.__log('ALERTA', msg)
