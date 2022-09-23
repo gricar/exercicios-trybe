@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/CastExample.csproj": {}
+    "/home/gabriel/Exercicios - Trybe/C-sharp/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/CastExample.csproj": {}
   },
   "projects": {
-    "/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/CastExample.csproj": {
+    "/home/gabriel/Exercicios - Trybe/C-sharp/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/CastExample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/CastExample.csproj",
+        "projectUniqueName": "/home/gabriel/Exercicios - Trybe/C-sharp/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/CastExample.csproj",
         "projectName": "CastExample",
-        "projectPath": "/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/CastExample.csproj",
+        "projectPath": "/home/gabriel/Exercicios - Trybe/C-sharp/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/CastExample.csproj",
         "packagesPath": "/home/gabriel/.nuget/packages/",
-        "outputPath": "/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/obj/",
+        "outputPath": "/home/gabriel/Exercicios - Trybe/C-sharp/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/gabriel/.nuget/NuGet/NuGet.Config"

@@ -10,3 +10,15 @@
 /home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/obj/Debug/net6.0/refint/CastExample.dll
 /home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/obj/Debug/net6.0/CastExample.pdb
 /home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/obj/Debug/net6.0/ref/CastExample.dll
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/bin/Debug/net6.0/CastExample.deps.json
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/bin/Debug/net6.0/CastExample.dll
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/bin/Debug/net6.0/CastExample.pdb
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/obj/Debug/net6.0/CastExample.csproj.AssemblyReference.cache
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/obj/Debug/net6.0/CastExample.GeneratedMSBuildEditorConfig.editorconfig
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/obj/Debug/net6.0/CastExample.AssemblyInfoInputs.cache
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/obj/Debug/net6.0/CastExample.AssemblyInfo.cs
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/obj/Debug/net6.0/CastExample.csproj.CoreCompileInputs.cache
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/obj/Debug/net6.0/CastExample.dll
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/obj/Debug/net6.0/refint/CastExample.dll
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/obj/Debug/net6.0/CastExample.pdb
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/obj/Debug/net6.0/ref/CastExample.dll

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j4TzzRWhdZTVBJr2UEW2NCi1tBtxRITDJN6pCY1+kozzxdSTDZIIiXJ7gbfS6S8IN9fKEC/3zI45Qdwqxk1GOg==",
+  "dgSpecHash": "DJ9iQ0ci4yYYYQvvtiqysimMQU/19TULIUnzOuh08PRYp3sXpyqJy7thDnQcwoFIrtpZJxWmTJiye7Uu81ZjRw==",
   "success": true,
-  "projectFilePath": "/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample.Test/CastExample.Test.csproj",
+  "projectFilePath": "/home/gabriel/Exercicios - Trybe/C-sharp/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample.Test/CastExample.Test.csproj",
   "expectedPackageFiles": [
     "/home/gabriel/.nuget/packages/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg.sha512",
     "/home/gabriel/.nuget/packages/fluentassertions/6.5.1/fluentassertions.6.5.1.nupkg.sha512",

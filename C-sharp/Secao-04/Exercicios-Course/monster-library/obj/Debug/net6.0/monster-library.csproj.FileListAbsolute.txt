@@ -1,0 +1,5 @@
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/monster-library/obj/Debug/net6.0/monster-library.csproj.AssemblyReference.cache
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/monster-library/obj/Debug/net6.0/monster-library.GeneratedMSBuildEditorConfig.editorconfig
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/monster-library/obj/Debug/net6.0/monster-library.AssemblyInfoInputs.cache
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/monster-library/obj/Debug/net6.0/monster-library.AssemblyInfo.cs
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/monster-library/obj/Debug/net6.0/monster-library.csproj.CoreCompileInputs.cache

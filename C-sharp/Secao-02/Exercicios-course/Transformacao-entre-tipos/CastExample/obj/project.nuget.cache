@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wPwIag8R1wsy2t9S4BerGfHo5nJZzBbHCE5lpV2QfRj1gm9OcfKJOEkzWmb4Q6sGIYM2UFulEPFFMEzdZRdNTQ==",
+  "dgSpecHash": "lo+Di4la1P+TlhERLD5E1brBDgYL/UEzxvbQT15lDv+JX3IIFCeL5ESw3ZOkME5b4hGWYU+W96/+nXiC4jigmw==",
   "success": true,
-  "projectFilePath": "/home/gabriel/Trybe/05-C#/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/CastExample.csproj",
+  "projectFilePath": "/home/gabriel/Exercicios - Trybe/C-sharp/Secao-02/Exercicios-course/Transformacao-entre-tipos/CastExample/CastExample.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
