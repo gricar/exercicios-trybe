@@ -14,6 +14,15 @@ class Jedi:
         return self.level * 100
 
 
+# Corrija o código sem alterar as classes de personagens (Soldier e Jedi).
+class JediAdapter:
+    def __init__(self, jedi):
+        self.jedi = jedi
+
+    def attack(self):
+        return self.jedi.attackWithSaber()
+
+
 class StarWarsGame:
     def __init__(self, character):
         self.character = character
@@ -23,4 +32,5 @@ class StarWarsGame:
 
 
 StarWarsGame(Soldier(5)).fight_enemy()
-StarWarsGame(Jedi(20)).fight_enemy()
+# StarWarsGame(Jedi(20)).fight_enemy()
+StarWarsGame(JediAdapter(Jedi(20))).fight_enemy()
