@@ -4,6 +4,12 @@
   {
     private string _account;
     private string _digit;
+
+    public Account(string account, string digit)
+    {
+        _account = account;
+        _digit = digit;
+    }
   }
 
   public string Name;
@@ -17,7 +23,7 @@
     _salary = salary;
   }
 
-  private void setAccount(string account, string digit)
+  public void setAccount(string account, string digit)
   {
     _employeeAcount = new Account(account, digit);
   }
