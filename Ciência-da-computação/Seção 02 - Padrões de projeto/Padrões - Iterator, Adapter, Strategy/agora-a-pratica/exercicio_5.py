@@ -36,6 +36,6 @@ class SvgImage:
 my_png_picture = PngImage("lagosta")
 my_png_picture.draw()
 
-# Error
+# Error - método Draw
 my_svg_picture = SvgImage("tucano")
 print(my_svg_picture.get_image())
