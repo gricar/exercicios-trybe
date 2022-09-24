@@ -33,9 +33,17 @@ class SvgImage:
         return f"SVG {self.svg_path} with {self.format}"
 
 
+class SvgAdapter:
+    def __init__(self, svg):
+        self.svg = svg
+
+    def draw(self):
+        return print(f"Drawing {self.svg.get_image()}")
+
+
 my_png_picture = PngImage("lagosta")
 my_png_picture.draw()
 
-# Error - método Draw
-my_svg_picture = SvgImage("tucano")
-print(my_svg_picture.get_image())
+# Adapter - método Draw
+my_svg_picture = SvgAdapter(SvgImage("tucano"))
+my_svg_picture.draw()
