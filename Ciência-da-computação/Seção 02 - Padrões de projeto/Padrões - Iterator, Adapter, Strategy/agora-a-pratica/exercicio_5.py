@@ -1,5 +1,5 @@
 """Você tem a implementação de uma classe capaz de renderizar imagens através
-de uma interface que utiliza o método draw. Porém, no momento ela só suporta
+de uma interface que utiliza o método "draw". Porém, no momento ela só suporta
 formato PNG e você também precisa ser capaz de renderizar imagens em SVG.
 Altere o código, sem modificar a classe SvgImage, para que isso seja possível.
 
@@ -31,3 +31,11 @@ class SvgImage:
 
     def get_image(self):
         return f"SVG {self.svg_path} with {self.format}"
+
+
+my_png_picture = PngImage("lagosta")
+my_png_picture.draw()
+
+# Error
+my_svg_picture = SvgImage("tucano")
+print(my_svg_picture.get_image())
