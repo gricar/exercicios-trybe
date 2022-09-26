@@ -1,0 +1,15 @@
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/tipos-de-jogos/obj/Debug/net6.0/tipos-de-jogos.csproj.AssemblyReference.cache
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/tipos-de-jogos/obj/Debug/net6.0/tipos-de-jogos.GeneratedMSBuildEditorConfig.editorconfig
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/tipos-de-jogos/obj/Debug/net6.0/tipos-de-jogos.AssemblyInfoInputs.cache
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/tipos-de-jogos/obj/Debug/net6.0/tipos-de-jogos.AssemblyInfo.cs
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/tipos-de-jogos/obj/Debug/net6.0/tipos-de-jogos.csproj.CoreCompileInputs.cache
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/tipos-de-jogos/bin/Debug/net6.0/tipos-de-jogos
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/tipos-de-jogos/bin/Debug/net6.0/tipos-de-jogos.deps.json
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/tipos-de-jogos/bin/Debug/net6.0/tipos-de-jogos.runtimeconfig.json
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/tipos-de-jogos/bin/Debug/net6.0/tipos-de-jogos.dll
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/tipos-de-jogos/bin/Debug/net6.0/tipos-de-jogos.pdb
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/tipos-de-jogos/obj/Debug/net6.0/tipos-de-jogos.dll
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/tipos-de-jogos/obj/Debug/net6.0/refint/tipos-de-jogos.dll
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/tipos-de-jogos/obj/Debug/net6.0/tipos-de-jogos.pdb
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/tipos-de-jogos/obj/Debug/net6.0/tipos-de-jogos.genruntimeconfig.cache
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-04/Exercicios-Course/tipos-de-jogos/obj/Debug/net6.0/ref/tipos-de-jogos.dll
