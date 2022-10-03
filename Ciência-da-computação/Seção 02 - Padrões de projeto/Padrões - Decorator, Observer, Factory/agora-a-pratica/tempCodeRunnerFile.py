@@ -1,0 +1,1 @@
+acionar_todas_rotinas
