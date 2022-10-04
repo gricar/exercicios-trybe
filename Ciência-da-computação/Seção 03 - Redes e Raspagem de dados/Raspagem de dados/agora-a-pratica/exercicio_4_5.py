@@ -1,7 +1,8 @@
-"""faça a extração dos campos título, preço, descrição e url contendo a imagem de capa do livro."""
-
 import requests
 from parsel import Selector
+
+"""ex 4) faça a extração dos campos título, preço, descrição e url contendo a imagem de capa do livro."""
+"""ex 5) retornar também quantos livros estão disponíveis,"""
 
 
 URL_BASE = "http://books.toscrape.com/catalogue/"
@@ -21,4 +22,8 @@ if description.endswith(suffix):
 
 cover = URL_BASE + selector.css("#product_gallery img::attr(src)").get()
 
-print(title, price, description, cover, sep=",")
+availability = selector.css(".product_main .availability::text").re_first(
+    r"\d"
+)
+# r"\d" -> regex indicando pegar apenas números
+print(title, price, description, cover, availability, sep=",")
