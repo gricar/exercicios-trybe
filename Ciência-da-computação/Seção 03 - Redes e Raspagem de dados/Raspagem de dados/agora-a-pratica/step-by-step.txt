@@ -6,3 +6,6 @@ python3 -m pip install requests
 
 3) instalado a biblioteca parsel
 python3 -m pip install parsel
+
+4) instalado a biblioteca pymongo
+python3 -m pip install pymongo
