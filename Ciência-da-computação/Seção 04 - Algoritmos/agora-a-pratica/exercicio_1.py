@@ -22,7 +22,7 @@ def main():
 
 main()
 
-#Analise de complexidade:
+# Analise de complexidade:
 """ O algoritmo ordena o array independente de qualquer coisa, então
 o seu pior caso, melhor caso e caso médio são, no mínimo,
 complexidade do algoritmo de ordenação do Python. Vendo a documentação,
