@@ -86,6 +86,16 @@ class LinkedList:
                 position -= 1
         return value_to_be_returned
 
+    def index_of(self, value):
+        position = 1
+        current_value = self.head_value
+        while current_value:
+            if current_value.value == value:
+                return position
+            current_value = current_value.next
+            position += 1
+        return -1
+
     def is_empty(self):
         return not self.__length
 
@@ -124,7 +134,9 @@ if __name__ == "__main__":
     linked_list.insert_at(7, 2)
     linked_list.insert_at(8, 3)
     linked_list.insert_at(9, 4)
+    print(linked_list)
     print(linked_list.get_element_at(3)) # saída: Node(value=8 next=None)
+    print(linked_list.index_of(6)) # saída: 2
 
 
 """ inserindo_numero_inicio = LinkedList()
