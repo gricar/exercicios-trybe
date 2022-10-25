@@ -1,3 +1,5 @@
+"""Ex1) adicionar uma nova função chamada min_value() que irá retornar o
+menor valor inteiro presente na pilha."""
 class Stack():
     def __init__(self):
         self._data = list()
@@ -59,3 +61,8 @@ if __name__ == "__main__":
     print(content_stack.min_value())  # saída: 1
     content_stack.push(-5)
     print(content_stack.min_value())  # saída: -5
+
+"""
+análise de complexidade:
+O método min_value realiza uma iteração com for, e por isso sua Complexidade de tempo é O(n).
+"""
