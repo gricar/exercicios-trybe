@@ -43,3 +43,10 @@ while option != 4:
     else:
         print("Finishing The garage Plus 2000!")
         option = 4
+
+
+"""
+análise de complexidade
+Este algoritmo realiza inserções de itens, que na Pilha possui
+Complexidade de tempo é O(1), porém existem alguns whiles que percorrem
+listas, e por isso sua Complexidade de tempo é O(n)."""
