@@ -23,21 +23,10 @@ stack.push(-2)
 try:
     stack.push(5)
 except StackOverflow:
-    print('The Stack is full')
+    print("The Stack is full")
 
-
-if __name__ == "__main__":
-    elements = [2, 1, 5, 4, 10, 6, 8, 22, 11, 10]
-    content_stack = Stack()
-
-    for elem in elements:
-        content_stack.push(elem)
-
-    print(content_stack.min_value())  # saída: 1
-    content_stack.push(-5)
-    print(content_stack.min_value())  # saída: -5
 
 """
 análise de complexidade:
-O método min_value realiza uma iteração com for, e por isso sua Complexidade de tempo é O(n).
+O método push realiza inserção de itens, que na Pilha possui Complexidade de tempo é O(1).
 """
