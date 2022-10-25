@@ -1,4 +1,5 @@
 # Implementando uma função que resolve expressões pós fixas
+# Utilizando o conceito de pilhas para realizar operações matemáticas
 from stack import Stack
 
 
