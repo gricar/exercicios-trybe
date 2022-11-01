@@ -8,7 +8,7 @@ public class BandeiraVisa : IBandeira
 
     if (valor < minimoValorCredito)
     {
-      Console.WriteLine($"[BandeiraVisa] O valor de R$ {valor} a ser pago é menor que o mínimo: {minimoValorCredito}");
+      Console.WriteLine($"[BandeiraVisa] O valor de R$ <ItemGroup>{valor} a ser pago é menor que o mínimo: {minimoValorCredito}");
     }
     else
     {

@@ -1,0 +1,6 @@
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-08/Exercicios Course/PublicandoWebAPIcDocker.Test/obj/Debug/net6.0/PublicandoWebAPIcDocker.Test.csproj.AssemblyReference.cache
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-08/Exercicios Course/PublicandoWebAPIcDocker.Test/obj/Debug/net6.0/PublicandoWebAPIcDocker.Test.GeneratedMSBuildEditorConfig.editorconfig
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-08/Exercicios Course/PublicandoWebAPIcDocker.Test/obj/Debug/net6.0/PublicandoWebAPIcDocker.Test.AssemblyInfoInputs.cache
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-08/Exercicios Course/PublicandoWebAPIcDocker.Test/obj/Debug/net6.0/PublicandoWebAPIcDocker.Test.AssemblyInfo.cs
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-08/Exercicios Course/PublicandoWebAPIcDocker.Test/obj/Debug/net6.0/PublicandoWebAPIcDocker.Test.csproj.CoreCompileInputs.cache
+/home/gabriel/Exercicios - Trybe/C-sharp/Secao-08/Exercicios Course/PublicandoWebAPIcDocker.Test/obj/Debug/net6.0/MvcTestingAppManifest.json
