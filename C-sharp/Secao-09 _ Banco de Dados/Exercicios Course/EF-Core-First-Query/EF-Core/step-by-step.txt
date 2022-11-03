@@ -1,0 +1,17 @@
+1) Subir o Banco de Dados - Docker
+  cd db/
+  docker-compose up -d
+
+2) Conectar Azure Data Studio
+  NEW CONNECTION:
+    Server: 127.0.0.1
+    Auth Type: SQL Login
+    User name: SA
+    Password: Password12
+
+3) Expor a variavel de ambiente
+  bash -> terminal:
+  export DOTNET_CONNECTION_STRING="Server=127.0.0.1;Database=trybe_db;User=SA;Password=Password12"
+
+4) dotnet run
+  Cadastrar uma pessoa estudante e visualizar no Azure Data Studio
