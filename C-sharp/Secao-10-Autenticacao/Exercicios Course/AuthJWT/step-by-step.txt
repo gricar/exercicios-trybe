@@ -1,0 +1,10 @@
+1) dotnet run
+
+2) insonia ou postman
+  http://localhost:5181/api/login
+
+  body:
+    {
+    "Name": "Gabriel",
+    "Password": "Trybe2022"
+    }
