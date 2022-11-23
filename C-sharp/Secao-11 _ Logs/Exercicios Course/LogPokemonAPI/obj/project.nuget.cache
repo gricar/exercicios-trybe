@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "FjNTC2X4wKnmMFWPDsZ67YjXf1Kj4ZMSYJI9GVQ3P3ImKIfk3gOnDnLS6GU2Sw4rpsgNG0HrK61cgRrnmNjcCw==",
+  "success": true,
+  "projectFilePath": "/home/gabriel/Exercicios - Trybe/C-sharp/Secao-11 _ Logs/Exercicios Course/LogPokemonAPI/LogPokemonAPI.csproj",
+  "expectedPackageFiles": [
+    "/home/gabriel/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/home/gabriel/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/gabriel/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/home/gabriel/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/home/gabriel/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/home/gabriel/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
