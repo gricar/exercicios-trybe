@@ -6,10 +6,12 @@ namespace LogPokemonAPI.Controllers;
 [Route("[controller]")]
 public class PokemonController : ControllerBase
 {
-  HttpClient _client;
-  public PokemonController(HttpClient client)
+  private readonly HttpClient _client;
+  private readonly ILogger<PokemonController> _logger;
+  public PokemonController(HttpClient client, ILogger<PokemonController> logger)
   {
     _client = client;
+    _logger = logger;
   }
 
   [HttpGet("{name}")]
@@ -23,8 +25,12 @@ public class PokemonController : ControllerBase
     {
       var content = await response.Content.ReadAsStringAsync();
 
+      _logger.LogInformation("Pokemon retrieved: {name}", name); //log aparece no terminal
+
       return Content(content, "application/json");
     }
+
+    _logger.LogWarning("Error: Pokemon '{name}' not found", name); //log aparece no terminal
 
     return NotFound("Pokemon not found");
   }
